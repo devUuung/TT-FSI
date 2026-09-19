@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "dataset": "adult",
+  "model": "lgbm",
+  "task": "classification",
+  "threads": 4,
+  "seed": 0,
+  "versions": {
+    "numpy": "2.4.3",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.5",
+    "torch": "2.10.0+cpu",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "dataset_files": {
+    "prepared.npz": "13c3e66103b46fe8ebb4a3137c40967c716af553aa2bfdde5a38e49f6d9d42e9",
+    "preprocessor.json": "82fb5bb7e4223f179f67a09455569a98aabdc09c2ca9d3195fa97a3f344d65ae",
+    "dataset.json": "6272375651b4fdb3520e96e2dc0b3249db99493f492a705ca815708ccfec0b9d"
+  },
+  "files": {
+    "model.txt": "743dd2184edfebbe77086e5d00e0013cde4bbfd8da2c83d9b521843c2f332351",
+    "test_predictions.npy": "67c951637319236a311970e33db37e2ec956b6d05a679fb07b51b50867fd5b03"
+  }
+}

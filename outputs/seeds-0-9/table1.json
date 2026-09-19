@@ -1,0 +1,4636 @@
+{
+  "schema_version": 1,
+  "table": 1,
+  "protocol": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "warmup_seeds": [
+      0,
+      1
+    ],
+    "warmups": 2,
+    "runs": 10,
+    "schema": 7,
+    "direct_validation": "diagnostic_only",
+    "input": "saved model game, centered interventional",
+    "game_config_sha256": "0736c0b8a6cfe0a9f5624ab390d996a99a3409948d57302a9c235dcd7a56802e",
+    "datasets": {
+      "8": "california",
+      "10": "diabetes",
+      "11": "compas",
+      "14": "adult",
+      "16": "bank",
+      "20": "german"
+    },
+    "dtype": "float32",
+    "validation": {
+      "rtol": 1.3e-06,
+      "atol": 1e-05
+    },
+    "validation_policy_source": "https://docs.pytorch.org/docs/main/testing.html#torch.testing.assert_close",
+    "timing_api": "GPU prepared run(out=buffer); CPU returned-output API",
+    "gpu_sync": true,
+    "allocation": "intermediate workspace live CuPy bytes; input/operator/output excluded",
+    "model": "xgb",
+    "dimensions": [
+      8,
+      10,
+      11,
+      14,
+      16,
+      20
+    ],
+    "ell": 3,
+    "methods": [
+      "cpu_dense",
+      "gpu_fused_bounded",
+      "direct",
+      "shapiq_exact"
+    ]
+  },
+  "protocol_sha256": "d65d52b233276849eab51f65d87890a4ffc17b91dc46d463bc8a9fda6a08d9d6",
+  "execution_fingerprint": {
+    "protocol_version": "fp32-v6-seeds-0-through-9",
+    "sources": {
+      "experiments/checkpoints.py": "1608daf7cb6f88727ceb7d58f39c5c671996d4c99d2ed3fddd720747e1e377e7",
+      "experiments/figstyle.py": "9372d4ebbc32c9fdbb364adf76fdcf2b0708a4c50490fc639f06c9af360a61d9",
+      "experiments/measurement.py": "01a1938187cbbdce40d3d10fd6f10265aaf70e288a1fc536f182f4c5b817f226",
+      "experiments/model_data.py": "7d8729cce2fb65384d31dc304942dc16cf33d80ab9c1f9550ef8d0645a9fe5c7",
+      "experiments/model_games.py": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+      "experiments/numerical_protocol.py": "e30e1b7dc161906d4b132b4b56bb8b2955c15a52e7fc9baef5505f0d393d4ec5",
+      "experiments/paper_california.py": "19697c579d75ba024d7f2a552f8f4714504ae9c7fe98f811b9c6aa74065954f9",
+      "experiments/paper_measure.py": "aa729d46199abe5454fdeb4365c3d530053d93510f9986ec1a6b02da30493209",
+      "experiments/paper_tables.py": "86589298aac1d05e4ac081ce7d6605c15f4a3d15ef263f91df3d29c2a7564985",
+      "experiments/plot_figures.py": "ca6d332627d07f35ca25d0fcc1e9bf4ad588897f319125897a210ea7f6a34480",
+      "experiments/prepare_model_games.py": "d5f54a20e017d2ffe6ce939c6ae75b0b80a6ddfe99b896dfe49648f0484d532a",
+      "experiments/run_paper.py": "bcb7c5f8c52e5d5784a3a8dc15172666a4230b21f91f639752ce846c5c6697b7",
+      "experiments/run_revision.py": "7e8da3d7efe0865dfd46b77f877f4806b88889ad2e4cd4ae85133f343e3f16d7",
+      "experiments/table1_runtime.py": "9692a16072f39a3c21e162b9b060cea63f788f7357c2f02dcf94597e19407fee",
+      "experiments/table2_batch.py": "ff12fbb31164f9ad60332f32955ad875a1e2e7d961273791a7a48e167f6e297a",
+      "experiments/table3_order.py": "5f739002363de02beaf25158f43b43fef0d7be5bdf8de83fbb1e68b7eff01245",
+      "experiments/table4_approximation.py": "652ab04eb25b73d234e7af23d447df3ed5eb9642fc421c5681f5e4616540ae05",
+      "experiments/table5_stability.py": "10ce51f5999686e8f6a7154f3c819fa5e63b7507c00c09042e1371e76f7a2534",
+      "experiments/table6_generation.py": "b331db1ca974ed6138300e0e0b4e86635c7debe00f7fa23a4ee97c45bcca7327",
+      "experiments/train_models.py": "4f2dd6bf448b0944351448a11c542afae0f0415c6c5df14a58f32c9ed8895bbe",
+      "experiments/verify_checkpoints.py": "c9ca33ae1edaa21751a8be7fb8ca7da3a8bd756da3292b4a07ab61cc7b7f37c7",
+      "tt_fsi/__init__.py": "ed6f6d47ba4fa5880a00c35b1a2c6d62469a4aeb38f1cd8e2d769007202d66bd",
+      "tt_fsi/_validation.py": "75a196195445c0dcfc9795aedbf9869b516c9e8d33dc7e381ec567aa6c5290e2",
+      "tt_fsi/core/__init__.py": "a646c913a101481869315a4947f133c3577505a27211c3cecb5af296bf9de756",
+      "tt_fsi/core/correction.py": "94166577900e410aa74dc4092e080fb4e2db35472a0cf2e7d6de05bac9c01d03",
+      "tt_fsi/core/fsi_efficient.py": "9b08423dda14ae9f023824a9392d13716abb90a7a883327f685fd0ac79dedaa3",
+      "tt_fsi/core/generic_operator.py": "12f3db5fb7f5ad57fada30214f44cba1b43a6f55a7c82beccd8873fc86ee4421",
+      "tt_fsi/core/gpu_tt.py": "d6a8cb6b70266b1bc3b0c13c140051dcef8ffe2e60a3d48d9752cbd683bdead0",
+      "tt_fsi/core/matvec_efficient.py": "fc4548bab4abbd0730964265cb121d286bad9718c5bd75723e0b6dc064c0f459",
+      "tt_fsi/core/mobius.py": "e0590956e2ee213c68e4b3217ed2d68e3020d7842f8a756a314b74a7fc6b8eab",
+      "tt_fsi/core/weight.py": "d0dcfcbd22bbfade1e679702e4df291294b7ab0de6fc85982b43d80135c3d6f5",
+      "tt_fsi/naive/__init__.py": "e740c4902f5b5343a0651e308de0cb6f05cb9fdf436218082723dd4af441a039",
+      "tt_fsi/naive/fsi_naive.py": "77ab547b80ba708e4e49bbfd86df0f7b43f4b20036258083b2a1ec7e3b988919",
+      "tt_fsi/naive/mobius_naive.py": "d5399ffaa6a4f229d4c3680083e0d5d833189d7922191f632bb875d78cff7b73"
+    },
+    "dependency_versions": {
+      "numpy": "2.4.3",
+      "scipy": "1.17.1",
+      "shapiq": "1.4.1",
+      "cupy-cuda12x": "14.1.1",
+      "scikit-learn": "1.8.0",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "torch": "2.10.0+cpu"
+    }
+  },
+  "origin": "measured",
+  "created_at": "2026-09-18T12:29:00.927943+00:00",
+  "records": [
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 8,
+      "ell": 3,
+      "batch": 1,
+      "method": "cpu_dense",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+      "operator_input_sha256": "7e02064784f291ae3c4f68c615aabc4207a31eb5a53f8909b7b48ae424d73943",
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          1.074798172339797,
+          1.108849886804819,
+          1.1077700182795525,
+          1.099754124879837,
+          1.0996279306709766,
+          1.0766570921987295,
+          1.092602964490652,
+          1.1026551946997643,
+          1.1034519411623478,
+          1.0939170606434345
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 1.096008438616991,
+        "std_ms": 0.011270646175783725,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 5.4016709327697754e-08,
+            "rmse": 6.417535974856392e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4016709327697754e-08,
+            "rmse": 6.417535974856392e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4016709327697754e-08,
+            "rmse": 6.417535974856392e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4016709327697754e-08,
+            "rmse": 6.417535974856392e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4016709327697754e-08,
+            "rmse": 6.417535974856392e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4016709327697754e-08,
+            "rmse": 6.417535974856392e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4016709327697754e-08,
+            "rmse": 6.417535974856392e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4016709327697754e-08,
+            "rmse": 6.417535974856392e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4016709327697754e-08,
+            "rmse": 6.417535974856392e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4016709327697754e-08,
+            "rmse": 6.417535974856392e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 5.4016709327697754e-08,
+        "max_rmse": 6.417535974856392e-09
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 8,
+      "ell": 3,
+      "batch": 1,
+      "method": "gpu_fused_bounded",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+      "operator_input_sha256": "7e02064784f291ae3c4f68c615aabc4207a31eb5a53f8909b7b48ae424d73943",
+      "resident_input_bytes": 1024,
+      "output_bytes": 1116,
+      "resident_operator_bytes": 13624,
+      "reusable_workspace_bytes": 0,
+      "workspace_peak_bytes": 7168,
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          0.23628794588148594,
+          0.24599581956863403,
+          0.24266098625957966,
+          0.24281209334731102,
+          0.24605798535048962,
+          0.24203117936849594,
+          0.24419603869318962,
+          0.24227704852819443,
+          0.24083000607788563,
+          0.2418148797005415
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 0.24249639827758074,
+        "std_ms": 0.0026456971974885145,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 2.421438694000244e-08,
+            "rmse": 6.078523795416402e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.421438694000244e-08,
+            "rmse": 6.078523795416402e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.421438694000244e-08,
+            "rmse": 6.078523795416402e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.421438694000244e-08,
+            "rmse": 6.078523795416402e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.421438694000244e-08,
+            "rmse": 6.078523795416402e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.421438694000244e-08,
+            "rmse": 6.078523795416402e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.421438694000244e-08,
+            "rmse": 6.078523795416402e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.421438694000244e-08,
+            "rmse": 6.078523795416402e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.421438694000244e-08,
+            "rmse": 6.078523795416402e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.421438694000244e-08,
+            "rmse": 6.078523795416402e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 2.421438694000244e-08,
+        "max_rmse": 6.078523795416402e-09
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 8,
+      "ell": 3,
+      "batch": 1,
+      "method": "direct",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+      "operator_input_sha256": "7e02064784f291ae3c4f68c615aabc4207a31eb5a53f8909b7b48ae424d73943",
+      "validation_policy": "diagnostic_only",
+      "timing": {
+        "samples_ms": [
+          21.180096082389355,
+          21.291607059538364,
+          21.234460175037384,
+          21.304052090272307,
+          21.318675950169563,
+          21.17793820798397,
+          21.14845789037645,
+          21.248331060633063,
+          21.185796009376645,
+          21.29375794902444
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 21.238317247480154,
+        "std_ms": 0.05888610749529511,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 1.7881393432617188e-07,
+            "rmse": 3.2924822868096726e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.7881393432617188e-07,
+            "rmse": 3.2924822868096726e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.7881393432617188e-07,
+            "rmse": 3.2924822868096726e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.7881393432617188e-07,
+            "rmse": 3.2924822868096726e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.7881393432617188e-07,
+            "rmse": 3.2924822868096726e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.7881393432617188e-07,
+            "rmse": 3.2924822868096726e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.7881393432617188e-07,
+            "rmse": 3.2924822868096726e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.7881393432617188e-07,
+            "rmse": 3.2924822868096726e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.7881393432617188e-07,
+            "rmse": 3.2924822868096726e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.7881393432617188e-07,
+            "rmse": 3.2924822868096726e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 256,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 1.7881393432617188e-07,
+        "max_rmse": 3.2924822868096726e-08
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 8,
+      "ell": 3,
+      "batch": 1,
+      "method": "shapiq_exact",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+      "operator_input_sha256": "7e02064784f291ae3c4f68c615aabc4207a31eb5a53f8909b7b48ae424d73943",
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          2.318684943020344,
+          2.3147310130298138,
+          2.2869009990245104,
+          2.312158001586795,
+          2.290962031111121,
+          2.3078001104295254,
+          2.334809163585305,
+          2.3035688791424036,
+          2.2977290209382772,
+          2.2896439768373966
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 2.305698813870549,
+        "std_ms": 0.01428324825878447,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 5.4825036926997583e-08,
+            "rmse": 1.9033519204610658e-08,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4825036926997583e-08,
+            "rmse": 1.9033519204610658e-08,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4825036926997583e-08,
+            "rmse": 1.9033519204610658e-08,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4825036926997583e-08,
+            "rmse": 1.9033519204610658e-08,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4825036926997583e-08,
+            "rmse": 1.9033519204610658e-08,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4825036926997583e-08,
+            "rmse": 1.9033519204610658e-08,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4825036926997583e-08,
+            "rmse": 1.9033519204610658e-08,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4825036926997583e-08,
+            "rmse": 1.9033519204610658e-08,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4825036926997583e-08,
+            "rmse": 1.9033519204610658e-08,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.4825036926997583e-08,
+            "rmse": 1.9033519204610658e-08,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 93,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 5.4825036926997583e-08,
+        "max_rmse": 1.9033519204610658e-08
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 10,
+      "ell": 3,
+      "batch": 1,
+      "method": "cpu_dense",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+      "operator_input_sha256": "0e7215e2ae6b9b475a226071456633fb7db5d2fddf3a65ebcc8c720d51451367",
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          1.7718099988996983,
+          2.039059065282345,
+          1.9952829461544752,
+          2.0385580137372017,
+          2.0006769336760044,
+          2.023387001827359,
+          2.0513408817350864,
+          2.06004292704165,
+          2.083031926304102,
+          2.0787690300494432
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 2.0141958724707365,
+        "std_ms": 0.08542677592570809,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 5.602836608886719e-06,
+            "rmse": 2.814271025108894e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.602836608886719e-06,
+            "rmse": 2.814271025108894e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.602836608886719e-06,
+            "rmse": 2.814271025108894e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.602836608886719e-06,
+            "rmse": 2.814271025108894e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.602836608886719e-06,
+            "rmse": 2.814271025108894e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.602836608886719e-06,
+            "rmse": 2.814271025108894e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.602836608886719e-06,
+            "rmse": 2.814271025108894e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.602836608886719e-06,
+            "rmse": 2.814271025108894e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.602836608886719e-06,
+            "rmse": 2.814271025108894e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.602836608886719e-06,
+            "rmse": 2.814271025108894e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 5.602836608886719e-06,
+        "max_rmse": 2.814271025108894e-07
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 10,
+      "ell": 3,
+      "batch": 1,
+      "method": "gpu_fused_bounded",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+      "operator_input_sha256": "0e7215e2ae6b9b475a226071456633fb7db5d2fddf3a65ebcc8c720d51451367",
+      "resident_input_bytes": 4096,
+      "output_bytes": 2112,
+      "resident_operator_bytes": 27164,
+      "reusable_workspace_bytes": 0,
+      "workspace_peak_bytes": 26112,
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          0.26209582574665546,
+          0.2782130613923073,
+          0.2708809915930033,
+          0.27781492099165916,
+          0.2771969884634018,
+          0.2755429595708847,
+          0.27589499950408936,
+          0.27609895914793015,
+          0.2742619253695011,
+          0.2765851095318794
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 0.27445857413113117,
+        "std_ms": 0.00457151717175077,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 3.337860107421875e-06,
+            "rmse": 4.298694449289542e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.337860107421875e-06,
+            "rmse": 4.298694449289542e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.337860107421875e-06,
+            "rmse": 4.298694449289542e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.337860107421875e-06,
+            "rmse": 4.298694449289542e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.337860107421875e-06,
+            "rmse": 4.298694449289542e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.337860107421875e-06,
+            "rmse": 4.298694449289542e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.337860107421875e-06,
+            "rmse": 4.298694449289542e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.337860107421875e-06,
+            "rmse": 4.298694449289542e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.337860107421875e-06,
+            "rmse": 4.298694449289542e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.337860107421875e-06,
+            "rmse": 4.298694449289542e-07,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 3.337860107421875e-06,
+        "max_rmse": 4.298694449289542e-07
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 10,
+      "ell": 3,
+      "batch": 1,
+      "method": "direct",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+      "operator_input_sha256": "0e7215e2ae6b9b475a226071456633fb7db5d2fddf3a65ebcc8c720d51451367",
+      "validation_policy": "diagnostic_only",
+      "timing": {
+        "samples_ms": [
+          160.9797328710556,
+          160.29811115004122,
+          162.1262540575117,
+          160.3320511057973,
+          160.2587029337883,
+          160.456475103274,
+          159.9695971235633,
+          160.15833988785744,
+          160.5658968910575,
+          160.50814813934267
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 160.5653309263289,
+        "std_ms": 0.5799755902950511,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": false,
+        "per_run": [
+          {
+            "status": "failed",
+            "max_abs_error": 2.6702880859375e-05,
+            "rmse": 3.383640546417155e-06,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 0
+          },
+          {
+            "status": "failed",
+            "max_abs_error": 2.6702880859375e-05,
+            "rmse": 3.383640546417155e-06,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 1
+          },
+          {
+            "status": "failed",
+            "max_abs_error": 2.6702880859375e-05,
+            "rmse": 3.383640546417155e-06,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 2
+          },
+          {
+            "status": "failed",
+            "max_abs_error": 2.6702880859375e-05,
+            "rmse": 3.383640546417155e-06,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 3
+          },
+          {
+            "status": "failed",
+            "max_abs_error": 2.6702880859375e-05,
+            "rmse": 3.383640546417155e-06,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 4
+          },
+          {
+            "status": "failed",
+            "max_abs_error": 2.6702880859375e-05,
+            "rmse": 3.383640546417155e-06,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 5
+          },
+          {
+            "status": "failed",
+            "max_abs_error": 2.6702880859375e-05,
+            "rmse": 3.383640546417155e-06,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 6
+          },
+          {
+            "status": "failed",
+            "max_abs_error": 2.6702880859375e-05,
+            "rmse": 3.383640546417155e-06,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 7
+          },
+          {
+            "status": "failed",
+            "max_abs_error": 2.6702880859375e-05,
+            "rmse": 3.383640546417155e-06,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 8
+          },
+          {
+            "status": "failed",
+            "max_abs_error": 2.6702880859375e-05,
+            "rmse": 3.383640546417155e-06,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1024,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 2.6702880859375e-05,
+        "max_rmse": 3.383640546417155e-06
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 10,
+      "ell": 3,
+      "batch": 1,
+      "method": "shapiq_exact",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+      "operator_input_sha256": "0e7215e2ae6b9b475a226071456633fb7db5d2fddf3a65ebcc8c720d51451367",
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          11.6251518484205,
+          11.65161095559597,
+          11.598601937294006,
+          11.5758350584656,
+          11.63238612934947,
+          11.604703031480312,
+          11.579479090869427,
+          11.536222882568836,
+          11.582803912460804,
+          11.599941179156303
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 11.598673602566123,
+        "std_ms": 0.031176800796310744,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 2.979172275541231e-06,
+            "rmse": 4.168494832369831e-07,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.979172275541231e-06,
+            "rmse": 4.168494832369831e-07,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.979172275541231e-06,
+            "rmse": 4.168494832369831e-07,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.979172275541231e-06,
+            "rmse": 4.168494832369831e-07,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.979172275541231e-06,
+            "rmse": 4.168494832369831e-07,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.979172275541231e-06,
+            "rmse": 4.168494832369831e-07,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.979172275541231e-06,
+            "rmse": 4.168494832369831e-07,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.979172275541231e-06,
+            "rmse": 4.168494832369831e-07,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.979172275541231e-06,
+            "rmse": 4.168494832369831e-07,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.979172275541231e-06,
+            "rmse": 4.168494832369831e-07,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 176,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 2.979172275541231e-06,
+        "max_rmse": 4.168494832369831e-07
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 11,
+      "ell": 3,
+      "batch": 1,
+      "method": "cpu_dense",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+      "operator_input_sha256": "331b5061f8c2de03d4ede31bbf43a8470fa9203c51dd4f812999e721b2cb8648",
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          2.303384942933917,
+          2.30705295689404,
+          2.3191680666059256,
+          2.3084240965545177,
+          2.3231678642332554,
+          2.321384847164154,
+          2.3246740456670523,
+          2.311738906428218,
+          2.324152970686555,
+          2.3033409379422665
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 2.31464896351099,
+        "std_ms": 0.008299764061198167,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 2.08200727769281e-08,
+            "rmse": 1.2324190924484303e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.08200727769281e-08,
+            "rmse": 1.2324190924484303e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.08200727769281e-08,
+            "rmse": 1.2324190924484303e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.08200727769281e-08,
+            "rmse": 1.2324190924484303e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.08200727769281e-08,
+            "rmse": 1.2324190924484303e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.08200727769281e-08,
+            "rmse": 1.2324190924484303e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.08200727769281e-08,
+            "rmse": 1.2324190924484303e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.08200727769281e-08,
+            "rmse": 1.2324190924484303e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.08200727769281e-08,
+            "rmse": 1.2324190924484303e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.08200727769281e-08,
+            "rmse": 1.2324190924484303e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 2.08200727769281e-08,
+        "max_rmse": 1.2324190924484303e-09
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 11,
+      "ell": 3,
+      "batch": 1,
+      "method": "gpu_fused_bounded",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+      "operator_input_sha256": "331b5061f8c2de03d4ede31bbf43a8470fa9203c51dd4f812999e721b2cb8648",
+      "resident_input_bytes": 8192,
+      "output_bytes": 2784,
+      "resident_operator_bytes": 37580,
+      "reusable_workspace_bytes": 0,
+      "workspace_peak_bytes": 51712,
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          0.2769008278846741,
+          0.29012816958129406,
+          0.2871379256248474,
+          0.29100896790623665,
+          0.2959039993584156,
+          0.289438059553504,
+          0.2904529683291912,
+          0.2915628720074892,
+          0.29256311245262623,
+          0.2912001218646765
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 0.2896297024562955,
+        "std_ms": 0.004746299542253859,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 1.0046278475783765e-08,
+            "rmse": 1.8700963199877463e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.0046278475783765e-08,
+            "rmse": 1.8700963199877463e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.0046278475783765e-08,
+            "rmse": 1.8700963199877463e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.0046278475783765e-08,
+            "rmse": 1.8700963199877463e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.0046278475783765e-08,
+            "rmse": 1.8700963199877463e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.0046278475783765e-08,
+            "rmse": 1.8700963199877463e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.0046278475783765e-08,
+            "rmse": 1.8700963199877463e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.0046278475783765e-08,
+            "rmse": 1.8700963199877463e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.0046278475783765e-08,
+            "rmse": 1.8700963199877463e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.0046278475783765e-08,
+            "rmse": 1.8700963199877463e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 1.0046278475783765e-08,
+        "max_rmse": 1.8700963199877463e-09
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 11,
+      "ell": 3,
+      "batch": 1,
+      "method": "direct",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+      "operator_input_sha256": "331b5061f8c2de03d4ede31bbf43a8470fa9203c51dd4f812999e721b2cb8648",
+      "validation_policy": "diagnostic_only",
+      "timing": {
+        "samples_ms": [
+          437.1129109058529,
+          417.711297981441,
+          417.9228460416198,
+          418.33947715349495,
+          417.62364003807306,
+          417.25087189115584,
+          417.29490901343524,
+          417.1947941649705,
+          417.0682558324188,
+          417.08024498075247
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 419.45992480032146,
+        "std_ms": 5.897088700074373,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 7.683411240577698e-08,
+            "rmse": 9.69286349100651e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 7.683411240577698e-08,
+            "rmse": 9.69286349100651e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 7.683411240577698e-08,
+            "rmse": 9.69286349100651e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 7.683411240577698e-08,
+            "rmse": 9.69286349100651e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 7.683411240577698e-08,
+            "rmse": 9.69286349100651e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 7.683411240577698e-08,
+            "rmse": 9.69286349100651e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 7.683411240577698e-08,
+            "rmse": 9.69286349100651e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 7.683411240577698e-08,
+            "rmse": 9.69286349100651e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 7.683411240577698e-08,
+            "rmse": 9.69286349100651e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 7.683411240577698e-08,
+            "rmse": 9.69286349100651e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 2048,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 7.683411240577698e-08,
+        "max_rmse": 9.69286349100651e-09
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 11,
+      "ell": 3,
+      "batch": 1,
+      "method": "shapiq_exact",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+      "operator_input_sha256": "331b5061f8c2de03d4ede31bbf43a8470fa9203c51dd4f812999e721b2cb8648",
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          27.696023928001523,
+          27.691446011886,
+          27.719622012227774,
+          27.671995107084513,
+          27.61688898317516,
+          27.71984809078276,
+          27.719485107809305,
+          27.64935907907784,
+          27.653856901451945,
+          27.71789184771478
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 27.68564170692116,
+        "std_ms": 0.03448410551647922,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 5.906949627348945e-09,
+            "rmse": 1.353730709455191e-09,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.906949627348945e-09,
+            "rmse": 1.353730709455191e-09,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.906949627348945e-09,
+            "rmse": 1.353730709455191e-09,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.906949627348945e-09,
+            "rmse": 1.353730709455191e-09,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.906949627348945e-09,
+            "rmse": 1.353730709455191e-09,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.906949627348945e-09,
+            "rmse": 1.353730709455191e-09,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.906949627348945e-09,
+            "rmse": 1.353730709455191e-09,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.906949627348945e-09,
+            "rmse": 1.353730709455191e-09,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.906949627348945e-09,
+            "rmse": 1.353730709455191e-09,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 5.906949627348945e-09,
+            "rmse": 1.353730709455191e-09,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 232,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 5.906949627348945e-09,
+        "max_rmse": 1.353730709455191e-09
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 14,
+      "ell": 3,
+      "batch": 1,
+      "method": "cpu_dense",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+      "operator_input_sha256": "105892965f541b581b8d7f96b12ec928d9488d685f4dded0f2fcfa5660aabec8",
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          8.99542891420424,
+          8.998725097626448,
+          9.039810858666897,
+          41.39000200666487,
+          9.375451831147075,
+          9.381567128002644,
+          9.008466033264995,
+          8.995685027912259,
+          8.99812113493681,
+          8.990158094093204
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 12.317341612651944,
+        "std_ms": 9.69202265733389,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 1.2223608791828156e-08,
+            "rmse": 2.60072585212337e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.2223608791828156e-08,
+            "rmse": 2.60072585212337e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.2223608791828156e-08,
+            "rmse": 2.60072585212337e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.2223608791828156e-08,
+            "rmse": 2.60072585212337e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.2223608791828156e-08,
+            "rmse": 2.60072585212337e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.2223608791828156e-08,
+            "rmse": 2.60072585212337e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.2223608791828156e-08,
+            "rmse": 2.60072585212337e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.2223608791828156e-08,
+            "rmse": 2.60072585212337e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.2223608791828156e-08,
+            "rmse": 2.60072585212337e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.2223608791828156e-08,
+            "rmse": 2.60072585212337e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 1.2223608791828156e-08,
+        "max_rmse": 2.60072585212337e-10
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 14,
+      "ell": 3,
+      "batch": 1,
+      "method": "gpu_fused_bounded",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+      "operator_input_sha256": "105892965f541b581b8d7f96b12ec928d9488d685f4dded0f2fcfa5660aabec8",
+      "resident_input_bytes": 65536,
+      "output_bytes": 5640,
+      "resident_operator_bytes": 93280,
+      "reusable_workspace_bytes": 0,
+      "workspace_peak_bytes": 409600,
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          0.3203649539500475,
+          0.33445307053625584,
+          0.33798604272305965,
+          0.3283941186964512,
+          0.33162813633680344,
+          0.3325659781694412,
+          0.3338840324431658,
+          0.327681889757514,
+          0.3266669809818268,
+          0.33621792681515217
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 0.33098431304097176,
+        "std_ms": 0.004987955550745922,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 8.96397978067398e-09,
+            "rmse": 9.454115944967922e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 8.96397978067398e-09,
+            "rmse": 9.454115944967922e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 8.96397978067398e-09,
+            "rmse": 9.454115944967922e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 8.96397978067398e-09,
+            "rmse": 9.454115944967922e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 8.96397978067398e-09,
+            "rmse": 9.454115944967922e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 8.96397978067398e-09,
+            "rmse": 9.454115944967922e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 8.96397978067398e-09,
+            "rmse": 9.454115944967922e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 8.96397978067398e-09,
+            "rmse": 9.454115944967922e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 8.96397978067398e-09,
+            "rmse": 9.454115944967922e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 8.96397978067398e-09,
+            "rmse": 9.454115944967922e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 8.96397978067398e-09,
+        "max_rmse": 9.454115944967922e-10
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 14,
+      "ell": 3,
+      "batch": 1,
+      "method": "direct",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+      "operator_input_sha256": "105892965f541b581b8d7f96b12ec928d9488d685f4dded0f2fcfa5660aabec8",
+      "validation_policy": "diagnostic_only",
+      "timing": {
+        "samples_ms": [
+          6765.181955182925,
+          6753.643125994131,
+          6758.813217049465,
+          6763.525031041354,
+          6762.61954405345,
+          6766.388694057241,
+          6770.621272036806,
+          6762.670706026256,
+          6750.060131074861,
+          6756.140534998849
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 6760.966421151534,
+        "std_ms": 5.94201214526505,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 2.849847078323364e-07,
+            "rmse": 1.0814458828445339e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.849847078323364e-07,
+            "rmse": 1.0814458828445339e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.849847078323364e-07,
+            "rmse": 1.0814458828445339e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.849847078323364e-07,
+            "rmse": 1.0814458828445339e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.849847078323364e-07,
+            "rmse": 1.0814458828445339e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.849847078323364e-07,
+            "rmse": 1.0814458828445339e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.849847078323364e-07,
+            "rmse": 1.0814458828445339e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.849847078323364e-07,
+            "rmse": 1.0814458828445339e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.849847078323364e-07,
+            "rmse": 1.0814458828445339e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.849847078323364e-07,
+            "rmse": 1.0814458828445339e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 16384,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 2.849847078323364e-07,
+        "max_rmse": 1.0814458828445339e-08
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 14,
+      "ell": 3,
+      "batch": 1,
+      "method": "shapiq_exact",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+      "operator_input_sha256": "105892965f541b581b8d7f96b12ec928d9488d685f4dded0f2fcfa5660aabec8",
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          897.0521129667759,
+          909.3934181146324,
+          895.6527409609407,
+          894.7209371253848,
+          896.5187468566,
+          897.8244508616626,
+          895.2058448921889,
+          896.7698540072888,
+          893.6673849821091,
+          896.5562749654055
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 897.3361765732989,
+        "std_ms": 4.182883147421198,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 3.997820491319359e-09,
+            "rmse": 7.159258795455872e-10,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.997820491319359e-09,
+            "rmse": 7.159258795455872e-10,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.997820491319359e-09,
+            "rmse": 7.159258795455872e-10,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.997820491319359e-09,
+            "rmse": 7.159258795455872e-10,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.997820491319359e-09,
+            "rmse": 7.159258795455872e-10,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.997820491319359e-09,
+            "rmse": 7.159258795455872e-10,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.997820491319359e-09,
+            "rmse": 7.159258795455872e-10,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.997820491319359e-09,
+            "rmse": 7.159258795455872e-10,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.997820491319359e-09,
+            "rmse": 7.159258795455872e-10,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.997820491319359e-09,
+            "rmse": 7.159258795455872e-10,
+            "output_dtype": "float64",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 470,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 3.997820491319359e-09,
+        "max_rmse": 7.159258795455872e-10
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 16,
+      "ell": 3,
+      "batch": 1,
+      "method": "cpu_dense",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+      "operator_input_sha256": "ae0a02d8a48e2bb869ac9be8a89739283c98fce7f04d48a3a543efd196e59ce1",
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          35.79698386602104,
+          36.415057023987174,
+          36.50633315555751,
+          36.05482401326299,
+          37.56351303309202,
+          35.94978805631399,
+          36.18181892670691,
+          36.05293482542038,
+          36.55233490280807,
+          36.39918891713023
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 36.34727767203003,
+        "std_ms": 0.4705559588365711,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 2.8920132066900806e-08,
+            "rmse": 3.225369794240331e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.8920132066900806e-08,
+            "rmse": 3.225369794240331e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.8920132066900806e-08,
+            "rmse": 3.225369794240331e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.8920132066900806e-08,
+            "rmse": 3.225369794240331e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.8920132066900806e-08,
+            "rmse": 3.225369794240331e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.8920132066900806e-08,
+            "rmse": 3.225369794240331e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.8920132066900806e-08,
+            "rmse": 3.225369794240331e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.8920132066900806e-08,
+            "rmse": 3.225369794240331e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.8920132066900806e-08,
+            "rmse": 3.225369794240331e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.8920132066900806e-08,
+            "rmse": 3.225369794240331e-10,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 2.8920132066900806e-08,
+        "max_rmse": 3.225369794240331e-10
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 16,
+      "ell": 3,
+      "batch": 1,
+      "method": "gpu_fused_bounded",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+      "operator_input_sha256": "ae0a02d8a48e2bb869ac9be8a89739283c98fce7f04d48a3a543efd196e59ce1",
+      "resident_input_bytes": 262144,
+      "output_bytes": 8364,
+      "resident_operator_bytes": 162576,
+      "reusable_workspace_bytes": 0,
+      "workspace_peak_bytes": 1638400,
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          0.34477608278393745,
+          0.3660670481622219,
+          0.34860684536397457,
+          0.35250792279839516,
+          0.35331305116415024,
+          0.3590530250221491,
+          0.3604509402066469,
+          0.3605140373110771,
+          0.35607791505753994,
+          0.35383598878979683
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 0.3555202856659889,
+        "std_ms": 0.005943828137492521,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 1.3096723705530167e-08,
+            "rmse": 2.045665199734703e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 697,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.3096723705530167e-08,
+            "rmse": 2.045665199734703e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 697,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.3096723705530167e-08,
+            "rmse": 2.045665199734703e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 697,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.3096723705530167e-08,
+            "rmse": 2.045665199734703e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 697,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.3096723705530167e-08,
+            "rmse": 2.045665199734703e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 697,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.3096723705530167e-08,
+            "rmse": 2.045665199734703e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 697,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.3096723705530167e-08,
+            "rmse": 2.045665199734703e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 697,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.3096723705530167e-08,
+            "rmse": 2.045665199734703e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 697,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.3096723705530167e-08,
+            "rmse": 2.045665199734703e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 697,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.3096723705530167e-08,
+            "rmse": 2.045665199734703e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 697,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 1.3096723705530167e-08,
+        "max_rmse": 2.045665199734703e-09
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 16,
+      "ell": 3,
+      "batch": 1,
+      "method": "direct",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+      "operator_input_sha256": "ae0a02d8a48e2bb869ac9be8a89739283c98fce7f04d48a3a543efd196e59ce1",
+      "validation_policy": "diagnostic_only",
+      "timing": {
+        "samples_ms": [
+          41840.312120039016,
+          41855.29787885025,
+          41863.40102204122,
+          41925.965366186574,
+          41830.84179600701,
+          41896.13526198082,
+          41875.8807098493,
+          41898.77736894414,
+          41804.64386893436,
+          42051.50686693378
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 41884.276225976646,
+        "std_ms": 65.21532657776179,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 3.1245872378349304e-07,
+            "rmse": 7.230446826336778e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.1245872378349304e-07,
+            "rmse": 7.230446826336778e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.1245872378349304e-07,
+            "rmse": 7.230446826336778e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.1245872378349304e-07,
+            "rmse": 7.230446826336778e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.1245872378349304e-07,
+            "rmse": 7.230446826336778e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.1245872378349304e-07,
+            "rmse": 7.230446826336778e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.1245872378349304e-07,
+            "rmse": 7.230446826336778e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.1245872378349304e-07,
+            "rmse": 7.230446826336778e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.1245872378349304e-07,
+            "rmse": 7.230446826336778e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 3.1245872378349304e-07,
+            "rmse": 7.230446826336778e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 65536,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 3.1245872378349304e-07,
+        "max_rmse": 7.230446826336778e-09
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 16,
+      "ell": 3,
+      "batch": 1,
+      "method": "shapiq_exact",
+      "memory_limit_bytes": 55949281689,
+      "status": "oom",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+      "operator_input_sha256": "ae0a02d8a48e2bb869ac9be8a89739283c98fce7f04d48a3a543efd196e59ce1",
+      "exception_type": "MemoryError",
+      "error_message": "Unable to allocate 32.0 GiB for an array with shape (65536, 65536) and data type float64",
+      "failure_stage": "operator",
+      "timing": {
+        "samples_ms": [],
+        "sample_seeds": [],
+        "n_runs": 0,
+        "required_runs": 10,
+        "mean_ms": null,
+        "std_ms": null,
+        "std_ddof": 0,
+        "complete": false
+      },
+      "validation": {
+        "n_checked_runs": 0,
+        "all_passed": false,
+        "per_run": [],
+        "max_abs_error": null,
+        "max_rmse": null
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 20,
+      "ell": 3,
+      "batch": 1,
+      "method": "cpu_dense",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+      "operator_input_sha256": "df7d71edf9c935975054e0f2bfb0ff6018cf55a95b77bb4612be308a3324643e",
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          1322.995311813429,
+          1321.394176920876,
+          1325.1228018198162,
+          1323.1943640857935,
+          1323.0602010153234,
+          1323.1337489560246,
+          1324.912816984579,
+          1319.6984729729593,
+          1319.218303076923,
+          1322.3325992003083
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 1322.5062796846032,
+        "std_ms": 1.8442417174531391,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 1.862645149230957e-08,
+            "rmse": 7.470145162169484e-11,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.862645149230957e-08,
+            "rmse": 7.470145162169484e-11,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.862645149230957e-08,
+            "rmse": 7.470145162169484e-11,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.862645149230957e-08,
+            "rmse": 7.470145162169484e-11,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.862645149230957e-08,
+            "rmse": 7.470145162169484e-11,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.862645149230957e-08,
+            "rmse": 7.470145162169484e-11,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.862645149230957e-08,
+            "rmse": 7.470145162169484e-11,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.862645149230957e-08,
+            "rmse": 7.470145162169484e-11,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.862645149230957e-08,
+            "rmse": 7.470145162169484e-11,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 1.862645149230957e-08,
+            "rmse": 7.470145162169484e-11,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 1.862645149230957e-08,
+        "max_rmse": 7.470145162169484e-11
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 20,
+      "ell": 3,
+      "batch": 1,
+      "method": "gpu_fused_bounded",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+      "operator_input_sha256": "df7d71edf9c935975054e0f2bfb0ff6018cf55a95b77bb4612be308a3324643e",
+      "resident_input_bytes": 4194304,
+      "output_bytes": 16212,
+      "resident_operator_bytes": 440156,
+      "reusable_workspace_bytes": 0,
+      "workspace_peak_bytes": 26214400,
+      "validation_policy": "require_allclose",
+      "timing": {
+        "samples_ms": [
+          0.49142702482640743,
+          0.5072159692645073,
+          0.5072369240224361,
+          0.5067437887191772,
+          0.5047169979661703,
+          0.5014871712774038,
+          0.5053160712122917,
+          0.505256000906229,
+          0.5029831081628799,
+          0.49885804764926434
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 0.5031241104006767,
+        "std_ms": 0.0046515385600574945,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 2.2351741790771484e-08,
+            "rmse": 1.5099753114533598e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1351,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.2351741790771484e-08,
+            "rmse": 1.5099753114533598e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1351,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.2351741790771484e-08,
+            "rmse": 1.5099753114533598e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1351,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.2351741790771484e-08,
+            "rmse": 1.5099753114533598e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1351,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.2351741790771484e-08,
+            "rmse": 1.5099753114533598e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1351,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.2351741790771484e-08,
+            "rmse": 1.5099753114533598e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1351,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.2351741790771484e-08,
+            "rmse": 1.5099753114533598e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1351,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.2351741790771484e-08,
+            "rmse": 1.5099753114533598e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1351,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.2351741790771484e-08,
+            "rmse": 1.5099753114533598e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1351,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 2.2351741790771484e-08,
+            "rmse": 1.5099753114533598e-09,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1351,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 2.2351741790771484e-08,
+        "max_rmse": 1.5099753114533598e-09
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 20,
+      "ell": 3,
+      "batch": 1,
+      "method": "direct",
+      "status": "ok",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+      "operator_input_sha256": "df7d71edf9c935975054e0f2bfb0ff6018cf55a95b77bb4612be308a3324643e",
+      "validation_policy": "diagnostic_only",
+      "timing": {
+        "samples_ms": [
+          1649618.6285070144,
+          1647197.0613598824,
+          1652626.7875400372,
+          1650357.4564871378,
+          1651199.5929111727,
+          1650265.9285850823,
+          1643006.3042710535,
+          1645005.1641131286,
+          1644339.7717180196,
+          1645780.9900250286
+        ],
+        "sample_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_runs": 10,
+        "required_runs": 10,
+        "mean_ms": 1647939.7685517557,
+        "std_ms": 3127.1759940411316,
+        "std_ddof": 0,
+        "complete": true
+      },
+      "validation": {
+        "n_checked_runs": 10,
+        "all_passed": true,
+        "per_run": [
+          {
+            "status": "passed",
+            "max_abs_error": 4.551839083433151e-06,
+            "rmse": 2.1792044145770018e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 0
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 4.551839083433151e-06,
+            "rmse": 2.1792044145770018e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 1
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 4.551839083433151e-06,
+            "rmse": 2.1792044145770018e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 2
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 4.551839083433151e-06,
+            "rmse": 2.1792044145770018e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 3
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 4.551839083433151e-06,
+            "rmse": 2.1792044145770018e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 4
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 4.551839083433151e-06,
+            "rmse": 2.1792044145770018e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 5
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 4.551839083433151e-06,
+            "rmse": 2.1792044145770018e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 6
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 4.551839083433151e-06,
+            "rmse": 2.1792044145770018e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 7
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 4.551839083433151e-06,
+            "rmse": 2.1792044145770018e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 8
+          },
+          {
+            "status": "passed",
+            "max_abs_error": 4.551839083433151e-06,
+            "rmse": 2.1792044145770018e-08,
+            "output_dtype": "float32",
+            "rtol": 1.3e-06,
+            "atol": 1e-05,
+            "outside_timing": true,
+            "reference": "tt_fsi.core.generic_operator.compute_interaction_index: prefix-pruned correction; dense Mobius/result",
+            "checked_values": 1048576,
+            "seed": 9
+          }
+        ],
+        "max_abs_error": 4.551839083433151e-06,
+        "max_rmse": 2.1792044145770018e-08
+      }
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 20,
+      "ell": 3,
+      "batch": 1,
+      "method": "shapiq_exact",
+      "memory_limit_bytes": 55958007398,
+      "status": "oom",
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+      "operator_input_sha256": "df7d71edf9c935975054e0f2bfb0ff6018cf55a95b77bb4612be308a3324643e",
+      "exception_type": "MemoryError",
+      "error_message": "Unable to allocate 8.00 TiB for an array with shape (1048576, 1048576) and data type float64",
+      "failure_stage": "operator",
+      "timing": {
+        "samples_ms": [],
+        "sample_seeds": [],
+        "n_runs": 0,
+        "required_runs": 10,
+        "mean_ms": null,
+        "std_ms": null,
+        "std_ddof": 0,
+        "complete": false
+      },
+      "validation": {
+        "n_checked_runs": 0,
+        "all_passed": false,
+        "per_run": [],
+        "max_abs_error": null,
+        "max_rmse": null
+      }
+    }
+  ],
+  "provenance": {
+    "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "versions": {
+      "numpy": "2.4.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.8.0",
+      "shapiq": "1.4.1",
+      "cupy-cuda12x": "14.1.1"
+    },
+    "measurement_source_sha256": "aa729d46199abe5454fdeb4365c3d530053d93510f9986ec1a6b02da30493209",
+    "historical_measurements_overwritten": false,
+    "sparse_core_storage": {
+      "8/3": {
+        "nonzeros": 410,
+        "array_bytes": 8200,
+        "dtype": "float32",
+        "includes": "CPU transition keys and coefficients; excludes Python object overhead"
+      },
+      "10/3": {
+        "nonzeros": 691,
+        "array_bytes": 13820,
+        "dtype": "float32",
+        "includes": "CPU transition keys and coefficients; excludes Python object overhead"
+      },
+      "11/3": {
+        "nonzeros": 859,
+        "array_bytes": 17180,
+        "dtype": "float32",
+        "includes": "CPU transition keys and coefficients; excludes Python object overhead"
+      },
+      "14/3": {
+        "nonzeros": 1471,
+        "array_bytes": 29420,
+        "dtype": "float32",
+        "includes": "CPU transition keys and coefficients; excludes Python object overhead"
+      },
+      "16/3": {
+        "nonzeros": 1969,
+        "array_bytes": 39380,
+        "dtype": "float32",
+        "includes": "CPU transition keys and coefficients; excludes Python object overhead"
+      },
+      "20/3": {
+        "nonzeros": 3181,
+        "array_bytes": 63620,
+        "dtype": "float32",
+        "includes": "CPU transition keys and coefficients; excludes Python object overhead"
+      }
+    },
+    "model": "xgb",
+    "inputs": {
+      "8": {
+        "identity": {
+          "dataset": "california",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "b6c4b9907afe0e18583a6e08739e94b05063429d7a8c26d424657ff3d97d70e0",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "6463c0450bd03f0abf1f7b03211a89b716e53422d870b9166ae9b052dd6b71e3",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 8,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.0038545780116692185,
+        "npz_sha256": "6dc084a523628e75369059bab5697818434bf416b5be31fe927edc304dc30b1c",
+        "d": 8,
+        "source": "saved_model_checkpoint",
+        "sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca"
+      },
+      "10": {
+        "identity": {
+          "dataset": "diabetes",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "bc508c235704904deed0a3dcd0828a07258be809e129265266ed07536fb00218",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "ce9cd8e3b1a14d099465d848c5f22ae7fa45922bdeb9db9ac2cd7c15c860abbd",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 10,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.011717903951648623,
+        "npz_sha256": "d2dcb88c6790e938882969da6e108fa504c22ba78d18817069e46e5a2c2ff2ec",
+        "d": 10,
+        "source": "saved_model_checkpoint",
+        "sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc"
+      },
+      "11": {
+        "identity": {
+          "dataset": "compas",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "5159e9d927cbbd43e7c23fc08b85edc69366339d9ce587d74344c7a62b0882b1",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "5f0169a8825a608cdc9649653c5e584917591b0742d18b2eb0c679e9277143a1",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 11,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.025235565030016005,
+        "npz_sha256": "8115d7195db354a910cf7e22c6cbe2f40cb674133823ae49f3e79e294a190093",
+        "d": 11,
+        "source": "saved_model_checkpoint",
+        "sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7"
+      },
+      "14": {
+        "identity": {
+          "dataset": "adult",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "f9f54c71e2106c233fe14d66c882752fd04853bbe9a5c36850f86295c410fd19",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "13c3e66103b46fe8ebb4a3137c40967c716af553aa2bfdde5a38e49f6d9d42e9",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 14,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.19425588700687513,
+        "npz_sha256": "84677f604248a4a3d0411814fb4e0a91f9077473feab7bbb9836feec359bd6da",
+        "d": 14,
+        "source": "saved_model_checkpoint",
+        "sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1"
+      },
+      "16": {
+        "identity": {
+          "dataset": "bank",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "61c94b1aa3893fbb21f83ec465fda046f26cd66be633bebddba0f8c7784591be",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "cbeebae4075bded0b17fa7e2af7461a953f21916530b41260777b776d1f686cf",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 16,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.7346265650121495,
+        "npz_sha256": "9506827a60197840299864327bc9ff368ff5f8fbaf010a8a2e64230658ce0b42",
+        "d": 16,
+        "source": "saved_model_checkpoint",
+        "sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331"
+      },
+      "20": {
+        "identity": {
+          "dataset": "german",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "957f5792796474d6e00977f00a2ea48fafa486d058f84e9400a65ea8c6ab4da6",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "29ead6a387529dd34caa50822224ee97fc264255483da0aeb57b3a2a3985a562",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 20,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 20.88680459500756,
+        "npz_sha256": "ac61ada7ff4188d3acf7ab0f878b21ab28850692b3c32df9b28e64078773f1e1",
+        "d": 20,
+        "source": "saved_model_checkpoint",
+        "sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9"
+      }
+    }
+  },
+  "content_sha256": "8954d5ab9452df6dc814d6ca93efd5077453e150edc35173e65f1b6fe3fc34e0"
+}

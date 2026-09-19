@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "encoding": "train-only ordinal categories; one original feature per FSI player",
+  "columns": [
+    {
+      "name": "checking_status",
+      "kind": "categorical",
+      "categories": [
+        "A11",
+        "A12",
+        "A13",
+        "A14"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "duration",
+      "kind": "numeric",
+      "median": 18.0
+    },
+    {
+      "name": "credit_history",
+      "kind": "categorical",
+      "categories": [
+        "A30",
+        "A31",
+        "A32",
+        "A33",
+        "A34"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "purpose",
+      "kind": "categorical",
+      "categories": [
+        "A40",
+        "A41",
+        "A410",
+        "A42",
+        "A43",
+        "A44",
+        "A45",
+        "A46",
+        "A48",
+        "A49"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "credit_amount",
+      "kind": "numeric",
+      "median": 2309.0
+    },
+    {
+      "name": "savings_status",
+      "kind": "categorical",
+      "categories": [
+        "A61",
+        "A62",
+        "A63",
+        "A64",
+        "A65"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "employment",
+      "kind": "categorical",
+      "categories": [
+        "A71",
+        "A72",
+        "A73",
+        "A74",
+        "A75"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "installment_commitment",
+      "kind": "numeric",
+      "median": 3.0
+    },
+    {
+      "name": "personal_status",
+      "kind": "categorical",
+      "categories": [
+        "A91",
+        "A92",
+        "A93",
+        "A94"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "other_parties",
+      "kind": "categorical",
+      "categories": [
+        "A101",
+        "A102",
+        "A103"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "residence_since",
+      "kind": "numeric",
+      "median": 3.0
+    },
+    {
+      "name": "property_magnitude",
+      "kind": "categorical",
+      "categories": [
+        "A121",
+        "A122",
+        "A123",
+        "A124"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "age",
+      "kind": "numeric",
+      "median": 33.0
+    },
+    {
+      "name": "other_payment_plans",
+      "kind": "categorical",
+      "categories": [
+        "A141",
+        "A142",
+        "A143"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "housing",
+      "kind": "categorical",
+      "categories": [
+        "A151",
+        "A152",
+        "A153"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "existing_credits",
+      "kind": "numeric",
+      "median": 1.0
+    },
+    {
+      "name": "job",
+      "kind": "categorical",
+      "categories": [
+        "A171",
+        "A172",
+        "A173",
+        "A174"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "num_dependents",
+      "kind": "numeric",
+      "median": 1.0
+    },
+    {
+      "name": "own_telephone",
+      "kind": "categorical",
+      "categories": [
+        "A191",
+        "A192"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "foreign_worker",
+      "kind": "categorical",
+      "categories": [
+        "A201",
+        "A202"
+      ],
+      "missing_or_unknown": -1
+    }
+  ],
+  "mean": [
+    1.609375,
+    21.04375,
+    2.5609375,
+    3.2375,
+    3239.3546875,
+    1.0796875,
+    2.384375,
+    2.9375,
+    1.6796875,
+    0.1328125,
+    2.846875,
+    1.3703125,
+    35.8671875,
+    1.6515625,
+    0.9171875,
+    1.4078125,
+    1.9265625,
+    1.1625,
+    0.40625,
+    0.040625
+  ],
+  "scale": [
+    1.265123357374687,
+    11.57683402046948,
+    1.0559529445452365,
+    2.782169791727309,
+    2775.6940389088745,
+    1.565714661853728,
+    1.1972910504029517,
+    1.1260411848595948,
+    0.6997052253225997,
+    0.4570813273846898,
+    1.1004216166429117,
+    1.042260117410117,
+    11.710286005894295,
+    0.721650059650627,
+    0.5312293194504133,
+    0.5870489458671646,
+    0.6318974866176842,
+    0.36890886408434126,
+    0.4911323014219285,
+    0.19741988090108833
+  ],
+  "fit_rows": "training split only"
+}

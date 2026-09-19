@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "dataset": "bank",
+  "model": "xgb",
+  "task": "classification",
+  "threads": 4,
+  "seed": 0,
+  "versions": {
+    "numpy": "2.4.3",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.5",
+    "torch": "2.10.0+cpu",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "dataset_files": {
+    "prepared.npz": "cbeebae4075bded0b17fa7e2af7461a953f21916530b41260777b776d1f686cf",
+    "preprocessor.json": "dc3f8a05ecb7b378ce7b57636753afd97fa5d330f01c3a757035ac6a19afee4b",
+    "dataset.json": "b52d49bea7e946a4076a6d413ab50ec32e39607a96d0972e7ae75db20ecc85bf"
+  },
+  "files": {
+    "test_predictions.npy": "120e1e495987581b0ebd1bc1abe4f793fcb5f3498eba36b088dc293e80ebdacb",
+    "model.ubj": "e929957d15fe0efb9f14c444ef435bbcd065287cdc6aed8d0e66563909b417fc"
+  },
+  "training_device": "cuda:0"
+}

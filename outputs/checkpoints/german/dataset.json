@@ -1,0 +1,42 @@
+{
+  "dataset": "german",
+  "task": "classification",
+  "n_rows": 1000,
+  "dimension": 20,
+  "feature_names": [
+    "checking_status",
+    "duration",
+    "credit_history",
+    "purpose",
+    "credit_amount",
+    "savings_status",
+    "employment",
+    "installment_commitment",
+    "personal_status",
+    "other_parties",
+    "residence_since",
+    "property_magnitude",
+    "age",
+    "other_payment_plans",
+    "housing",
+    "existing_credits",
+    "job",
+    "num_dependents",
+    "own_telephone",
+    "foreign_worker"
+  ],
+  "sources": [
+    {
+      "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/statlog/german/german.data",
+      "sha256": "b21f3d81db8071257d5ff1deaeba1fd4303b62712e6fcc9715c7a86202cb5871"
+    }
+  ],
+  "parsed_data_sha256": "18ec68a84080d67b501452f0425145b7a014e21f425869469dd31a822d40126a",
+  "positive_class": "bad credit (class=2)",
+  "split_seed": 0,
+  "n_train": 640,
+  "n_validation": 160,
+  "n_test": 200,
+  "background_selection": "first 100 training split indices",
+  "explained_row": 529
+}

@@ -1,0 +1,18 @@
+# Pinned reproduction environment, verified on Linux/Python 3.12.
+# Install with -c constraints-verified-linux-py312.txt.
+numpy==2.4.3
+scipy==1.17.1
+scikit-learn==1.8.0
+shapiq==1.4.1
+psutil==7.2.2
+pytest==8.4.2
+matplotlib==3.11.1
+pandas==3.0.5
+joblib==1.6.0
+lightgbm==4.7.0
+xgboost==3.4.1
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.10.0+cpu; sys_platform == "linux"
+torch==2.10.0; sys_platform != "linux"
+# GPU tables and the CPU/GPU comparison need CUDA 12; drop this line on a CPU-only host.
+cupy-cuda12x[ctk]==14.1.1

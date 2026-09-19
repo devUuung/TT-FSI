@@ -1,0 +1,38 @@
+{
+  "dataset": "bank",
+  "task": "classification",
+  "n_rows": 45211,
+  "dimension": 16,
+  "feature_names": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "balance",
+    "housing",
+    "loan",
+    "contact",
+    "day",
+    "month",
+    "duration",
+    "campaign",
+    "pdays",
+    "previous",
+    "poutcome"
+  ],
+  "sources": [
+    {
+      "url": "https://archive.ics.uci.edu/static/public/222/bank+marketing.zip",
+      "sha256": "e0bf5f5de5b846e2f18e9d90606637267d46dfa260e0f17bb12e605db5efbeb4"
+    }
+  ],
+  "parsed_data_sha256": "12ddde8874718cf6521ba2ada01a2f5c07949c7644e3bed778177e689e9ef326",
+  "positive_class": "yes",
+  "split_seed": 0,
+  "n_train": 28934,
+  "n_validation": 7234,
+  "n_test": 9043,
+  "background_selection": "first 100 training split indices",
+  "explained_row": 32936
+}

@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "dataset": "diabetes",
+    "model": "xgb",
+    "checkpoint_manifest_sha256": "bc508c235704904deed0a3dcd0828a07258be809e129265266ed07536fb00218",
+    "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+    "prepared_sha256": "ce9cd8e3b1a14d099465d848c5f22ae7fa45922bdeb9db9ac2cd7c15c860abbd",
+    "definition": "centered interventional; positive probability for classification",
+    "d": 10,
+    "background_rows": 100,
+    "chunk_coalitions": 256
+  },
+  "generation_seconds": 0.011717903951648623,
+  "npz_sha256": "d2dcb88c6790e938882969da6e108fa504c22ba78d18817069e46e5a2c2ff2ec"
+}

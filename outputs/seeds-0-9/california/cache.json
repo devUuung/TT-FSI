@@ -1,0 +1,111 @@
+{
+  "execution_fingerprint": {
+    "protocol_version": "fp32-v6-seeds-0-through-9",
+    "sources": {
+      "experiments/checkpoints.py": "1608daf7cb6f88727ceb7d58f39c5c671996d4c99d2ed3fddd720747e1e377e7",
+      "experiments/figstyle.py": "9372d4ebbc32c9fdbb364adf76fdcf2b0708a4c50490fc639f06c9af360a61d9",
+      "experiments/measurement.py": "01a1938187cbbdce40d3d10fd6f10265aaf70e288a1fc536f182f4c5b817f226",
+      "experiments/model_data.py": "7d8729cce2fb65384d31dc304942dc16cf33d80ab9c1f9550ef8d0645a9fe5c7",
+      "experiments/model_games.py": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+      "experiments/numerical_protocol.py": "e30e1b7dc161906d4b132b4b56bb8b2955c15a52e7fc9baef5505f0d393d4ec5",
+      "experiments/paper_california.py": "19697c579d75ba024d7f2a552f8f4714504ae9c7fe98f811b9c6aa74065954f9",
+      "experiments/paper_measure.py": "aa729d46199abe5454fdeb4365c3d530053d93510f9986ec1a6b02da30493209",
+      "experiments/paper_tables.py": "86589298aac1d05e4ac081ce7d6605c15f4a3d15ef263f91df3d29c2a7564985",
+      "experiments/plot_figures.py": "ca6d332627d07f35ca25d0fcc1e9bf4ad588897f319125897a210ea7f6a34480",
+      "experiments/prepare_model_games.py": "d5f54a20e017d2ffe6ce939c6ae75b0b80a6ddfe99b896dfe49648f0484d532a",
+      "experiments/run_paper.py": "bcb7c5f8c52e5d5784a3a8dc15172666a4230b21f91f639752ce846c5c6697b7",
+      "experiments/run_revision.py": "7e8da3d7efe0865dfd46b77f877f4806b88889ad2e4cd4ae85133f343e3f16d7",
+      "experiments/table1_runtime.py": "9692a16072f39a3c21e162b9b060cea63f788f7357c2f02dcf94597e19407fee",
+      "experiments/table2_batch.py": "ff12fbb31164f9ad60332f32955ad875a1e2e7d961273791a7a48e167f6e297a",
+      "experiments/table3_order.py": "5f739002363de02beaf25158f43b43fef0d7be5bdf8de83fbb1e68b7eff01245",
+      "experiments/table4_approximation.py": "652ab04eb25b73d234e7af23d447df3ed5eb9642fc421c5681f5e4616540ae05",
+      "experiments/table5_stability.py": "10ce51f5999686e8f6a7154f3c819fa5e63b7507c00c09042e1371e76f7a2534",
+      "experiments/table6_generation.py": "b331db1ca974ed6138300e0e0b4e86635c7debe00f7fa23a4ee97c45bcca7327",
+      "experiments/train_models.py": "4f2dd6bf448b0944351448a11c542afae0f0415c6c5df14a58f32c9ed8895bbe",
+      "experiments/verify_checkpoints.py": "c9ca33ae1edaa21751a8be7fb8ca7da3a8bd756da3292b4a07ab61cc7b7f37c7",
+      "tt_fsi/__init__.py": "ed6f6d47ba4fa5880a00c35b1a2c6d62469a4aeb38f1cd8e2d769007202d66bd",
+      "tt_fsi/_validation.py": "75a196195445c0dcfc9795aedbf9869b516c9e8d33dc7e381ec567aa6c5290e2",
+      "tt_fsi/core/__init__.py": "a646c913a101481869315a4947f133c3577505a27211c3cecb5af296bf9de756",
+      "tt_fsi/core/correction.py": "94166577900e410aa74dc4092e080fb4e2db35472a0cf2e7d6de05bac9c01d03",
+      "tt_fsi/core/fsi_efficient.py": "9b08423dda14ae9f023824a9392d13716abb90a7a883327f685fd0ac79dedaa3",
+      "tt_fsi/core/generic_operator.py": "12f3db5fb7f5ad57fada30214f44cba1b43a6f55a7c82beccd8873fc86ee4421",
+      "tt_fsi/core/gpu_tt.py": "d6a8cb6b70266b1bc3b0c13c140051dcef8ffe2e60a3d48d9752cbd683bdead0",
+      "tt_fsi/core/matvec_efficient.py": "fc4548bab4abbd0730964265cb121d286bad9718c5bd75723e0b6dc064c0f459",
+      "tt_fsi/core/mobius.py": "e0590956e2ee213c68e4b3217ed2d68e3020d7842f8a756a314b74a7fc6b8eab",
+      "tt_fsi/core/weight.py": "d0dcfcbd22bbfade1e679702e4df291294b7ab0de6fc85982b43d80135c3d6f5",
+      "tt_fsi/naive/__init__.py": "e740c4902f5b5343a0651e308de0cb6f05cb9fdf436218082723dd4af441a039",
+      "tt_fsi/naive/fsi_naive.py": "77ab547b80ba708e4e49bbfd86df0f7b43f4b20036258083b2a1ec7e3b988919",
+      "tt_fsi/naive/mobius_naive.py": "d5399ffaa6a4f229d4c3680083e0d5d833189d7922191f632bb875d78cff7b73"
+    },
+    "dependency_versions": {
+      "numpy": "2.4.3",
+      "scipy": "1.17.1",
+      "shapiq": "1.4.1",
+      "cupy-cuda12x": "14.1.1",
+      "scikit-learn": "1.8.0",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "torch": "2.10.0+cpu"
+    }
+  },
+  "validation": {
+    "rtol": 1.3e-06,
+    "atol": 1e-05
+  },
+  "dtype": "float32",
+  "case": "california_xgb",
+  "game_config_sha256": "0736c0b8a6cfe0a9f5624ab390d996a99a3409948d57302a9c235dcd7a56802e",
+  "origin": "measured",
+  "model": "saved xgb",
+  "files": {
+    "scores-ell3.npz": "3e947f1900b3dcdf6d15f22e2fa48d09078f1bc379abc224c085ed7ff5e01449",
+    "scores-ell1.npz": "3f117ec74b193ccdf5daf99cafa8cfa3080805607f28d04f367ea87b39e1c924",
+    "game.npz": "7b3fe08e6818e119214382c009333a05454a94b19d6fa125e9b4712330f917f4",
+    "summary.json": "b0c3fbdd49278154b114443ad4929d73dce28f6fe7fca8cf8c26e14e74e1187e",
+    "scores-ell2.npz": "1b23875bbfe953263b598cea777ba856621b7b5c5e82fa75a98ca4e53b0a0850"
+  },
+  "summary": {
+    "model": "saved xgb",
+    "input": {
+      "identity": {
+        "dataset": "california",
+        "model": "xgb",
+        "checkpoint_manifest_sha256": "b6c4b9907afe0e18583a6e08739e94b05063429d7a8c26d424657ff3d97d70e0",
+        "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+        "prepared_sha256": "6463c0450bd03f0abf1f7b03211a89b716e53422d870b9166ae9b052dd6b71e3",
+        "definition": "centered interventional; positive probability for classification",
+        "d": 8,
+        "background_rows": 100,
+        "chunk_coalitions": 256
+      },
+      "generation_seconds": 0.0038545780116692185,
+      "npz_sha256": "6dc084a523628e75369059bab5697818434bf416b5be31fe927edc304dc30b1c",
+      "d": 8,
+      "source": "saved_model_checkpoint",
+      "sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca"
+    },
+    "dataset": "California Housing",
+    "value_generation_ms": 3.8545780116692185,
+    "game_sha256": "21fc7c6499b0e0528df7fc38b523e47112db6c5eb4a4f90c638980e36ebfa118",
+    "results": [
+      {
+        "ell": 1,
+        "max_abs_vs_brute": 2.384185791015625e-07,
+        "max_abs_vs_shapiq": 9.320007965385457e-08,
+        "max_abs_gpu_vs_cpu": 5.960464477539063e-08
+      },
+      {
+        "ell": 2,
+        "max_abs_vs_brute": 1.1920928955078125e-07,
+        "max_abs_vs_shapiq": 3.589824693062127e-08,
+        "max_abs_gpu_vs_cpu": 5.960464477539063e-08
+      },
+      {
+        "ell": 3,
+        "max_abs_vs_brute": 1.7881393432617188e-07,
+        "max_abs_vs_shapiq": 5.4825036926997583e-08,
+        "max_abs_gpu_vs_cpu": 2.421438694000244e-08
+      }
+    ]
+  }
+}

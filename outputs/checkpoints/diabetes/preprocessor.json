@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "encoding": "train-only ordinal categories; one original feature per FSI player",
+  "columns": [
+    {
+      "name": "age",
+      "kind": "numeric",
+      "median": 50.0
+    },
+    {
+      "name": "sex",
+      "kind": "numeric",
+      "median": 1.0
+    },
+    {
+      "name": "bmi",
+      "kind": "numeric",
+      "median": 25.4
+    },
+    {
+      "name": "bp",
+      "kind": "numeric",
+      "median": 93.0
+    },
+    {
+      "name": "s1",
+      "kind": "numeric",
+      "median": 185.5
+    },
+    {
+      "name": "s2",
+      "kind": "numeric",
+      "median": 113.5
+    },
+    {
+      "name": "s3",
+      "kind": "numeric",
+      "median": 49.0
+    },
+    {
+      "name": "s4",
+      "kind": "numeric",
+      "median": 4.0
+    },
+    {
+      "name": "s5",
+      "kind": "numeric",
+      "median": 4.5747
+    },
+    {
+      "name": "s6",
+      "kind": "numeric",
+      "median": 91.0
+    }
+  ],
+  "mean": [
+    48.52482269503546,
+    1.4929078014184398,
+    26.15957446808511,
+    94.34507092198584,
+    188.5,
+    115.09042553191493,
+    50.27127659574468,
+    4.0072695035461,
+    4.605053191489361,
+    90.70212765957447
+  ],
+  "scale": [
+    13.632502650454988,
+    0.49994969818900803,
+    4.489633113371453,
+    13.656022396364374,
+    34.32285697080442,
+    30.335870684282856,
+    12.745114116056243,
+    1.2652558364311772,
+    0.525368709912441,
+    12.049392840035145
+  ],
+  "fit_rows": "training split only"
+}

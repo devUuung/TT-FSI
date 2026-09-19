@@ -1,0 +1,17 @@
+% Origin: measured. Protocol SHA256: d65d52b233276849eab51f65d87890a4ffc17b91dc46d463bc8a9fda6a08d9d6. OOM denotes failure to complete under the configured host or device memory constraints, including the host-memory cap used for baseline runs. FAIL denotes validation failure or another recorded error; no runtime is reported for those cells.
+\begin{table}[htbp]
+\centering
+\caption{Operator runtime (ms)}
+\begin{tabular}{rrrrr}
+\toprule
+\(d\) & CPU dense & GPU bounded & Direct FSI & FSII \\
+\midrule
+8 & 1.10 & 0.24 & 21.24 & 2.31 \\
+10 & 2.01 & 0.27 & 160.57 & 11.60 \\
+11 & 2.31 & 0.29 & 419.46 & 27.69 \\
+14 & 12.32 & 0.33 & 6761 & 897.34 \\
+16 & 36.35 & 0.36 & 41884 & OOM \\
+20 & 1322.51 & 0.50 & 1647940 & OOM \\
+\bottomrule
+\end{tabular}
+\end{table}

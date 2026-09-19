@@ -1,0 +1,31 @@
+{
+  "dataset": "diabetes",
+  "task": "regression",
+  "n_rows": 442,
+  "dimension": 10,
+  "feature_names": [
+    "age",
+    "sex",
+    "bmi",
+    "bp",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6"
+  ],
+  "sources": [
+    {
+      "provider": "sklearn.datasets.load_diabetes(scaled=False)"
+    }
+  ],
+  "parsed_data_sha256": "d324cbef871d4b3976388e404dd19d0af63196fed857ce05a2aa3552c7db8137",
+  "positive_class": null,
+  "split_seed": 0,
+  "n_train": 282,
+  "n_validation": 71,
+  "n_test": 89,
+  "background_selection": "first 100 training split indices",
+  "explained_row": 362
+}

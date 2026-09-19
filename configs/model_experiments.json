@@ -1,0 +1,26 @@
+{
+  "schema_version": 3,
+  "model_by_experiment": {
+    "table1": "xgb",
+    "table2": "lgbm",
+    "table3": "dt",
+    "table4": "mlp",
+    "table5": "mlp",
+    "table6": "xgb",
+    "california": "xgb"
+  },
+  "dataset_by_dimension": {
+    "8": "california",
+    "10": "diabetes",
+    "11": "compas",
+    "14": "adult",
+    "16": "bank",
+    "20": "german"
+  },
+  "assignment_rationale": "Each experiment uses one model family across dimensions; each dataset has its own fitted model and coalition value function. Table 6 measures generation of Table 1's XGBoost games, and the California case reuses Table 1's d=8 game. Table 2 uses LightGBM on German Credit, Table 3 uses a decision tree on Adult, and Tables 4 and 5 share the Adult MLP game, with Table 5 evaluating stability over ten estimator seeds. Nine distinct (dataset, model) games cover the paper experiments.",
+  "synthetic_dimensions": [],
+  "chunk_coalitions": 256,
+  "value_generation_repetitions": 3,
+  "checkpoint_directory": "outputs/checkpoints",
+  "cache_directory": "outputs/games"
+}

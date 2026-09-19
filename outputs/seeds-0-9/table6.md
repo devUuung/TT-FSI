@@ -1,0 +1,12 @@
+# Table 6: Coalition-value generation (ms)
+
+Origin: measured. Protocol SHA256: 23e25e3e6aa90b684cea491f6e3db0e944a8af8e4f62ce1cdb7dec98ee127bfe. OOM denotes failure to complete under the configured host or device memory constraints, including the host-memory cap used for baseline runs. FAIL denotes validation failure or another recorded error; no runtime is reported for those cells.
+
+| d | Generation time (ms) |
+| --- | --- |
+| 8 | 4.36 |
+| 10 | 13.11 |
+| 11 | 25.39 |
+| 14 | 218.85 |
+| 16 | 911.14 |
+| 20 | 16,294.51 |

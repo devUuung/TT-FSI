@@ -1,0 +1,20 @@
+{
+  "tables": [
+    2,
+    3,
+    4,
+    6,
+    1
+  ],
+  "refresh_tables": [
+    1,
+    2,
+    3,
+    4,
+    6
+  ],
+  "california": true,
+  "refresh_california": true,
+  "figures": true,
+  "output_directory": "paper-results/seeds-0-9"
+}

@@ -1,0 +1,98 @@
+{
+  "tables": [],
+  "refresh_tables": [],
+  "california": false,
+  "refresh_california": true,
+  "output_directory": "paper-results/cpu-dense",
+  "figures": false,
+  "operator_jobs": [
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 8,
+      "ell": 3,
+      "batch": 1,
+      "method": "cpu_dense"
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 10,
+      "ell": 3,
+      "batch": 1,
+      "method": "cpu_dense"
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 11,
+      "ell": 3,
+      "batch": 1,
+      "method": "cpu_dense"
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 14,
+      "ell": 3,
+      "batch": 1,
+      "method": "cpu_dense"
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 16,
+      "ell": 3,
+      "batch": 1,
+      "method": "cpu_dense"
+    },
+    {
+      "section": "table1",
+      "experiment": "table1",
+      "d": 20,
+      "ell": 3,
+      "batch": 1,
+      "method": "cpu_dense"
+    },
+    {
+      "section": "table3",
+      "experiment": "table3",
+      "d": 14,
+      "ell": 2,
+      "batch": 1,
+      "method": "cpu_dense"
+    },
+    {
+      "section": "table3",
+      "experiment": "table3",
+      "d": 14,
+      "ell": 3,
+      "batch": 1,
+      "method": "cpu_dense"
+    },
+    {
+      "section": "table3",
+      "experiment": "table3",
+      "d": 14,
+      "ell": 4,
+      "batch": 1,
+      "method": "cpu_dense"
+    },
+    {
+      "section": "table3",
+      "experiment": "table3",
+      "d": 14,
+      "ell": 5,
+      "batch": 1,
+      "method": "cpu_dense"
+    },
+    {
+      "section": "table3",
+      "experiment": "table3",
+      "d": 14,
+      "ell": 6,
+      "batch": 1,
+      "method": "cpu_dense"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "run_model_training": false,
+  "run_checkpoint_verification": false,
+  "run_prepare_model_games": true,
+  "run_paper_reproduction": true
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "seed": 0,
+  "datasets": [
+    "california",
+    "diabetes",
+    "compas",
+    "adult",
+    "bank",
+    "german"
+  ],
+  "models": [
+    "dt",
+    "lgbm",
+    "xgb",
+    "mlp"
+  ],
+  "test_fraction": 0.2,
+  "validation_fraction_of_training": 0.2,
+  "background_rows": 100,
+  "threads": 4,
+  "tree_max_depth": 6,
+  "boosting_estimators": 30,
+  "xgb_device": "cuda:0",
+  "mlp": {
+    "hidden_sizes": [
+      32,
+      16
+    ],
+    "learning_rate": 0.001,
+    "batch_size": 256,
+    "max_epochs": 300,
+    "patience": 25,
+    "min_delta": 1e-06
+  },
+  "output_directory": "outputs/checkpoints"
+}

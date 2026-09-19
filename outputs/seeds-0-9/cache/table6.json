@@ -1,0 +1,1026 @@
+{
+  "schema_version": 1,
+  "table": 6,
+  "protocol": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "warmup_seeds": [
+      0,
+      1
+    ],
+    "warmups": 2,
+    "runs": 10,
+    "schema": 5,
+    "dimensions": [
+      8,
+      10,
+      11,
+      14,
+      16,
+      20
+    ],
+    "game_config_sha256": "0736c0b8a6cfe0a9f5624ab390d996a99a3409948d57302a9c235dcd7a56802e",
+    "background_rows": 100,
+    "chunk_coalitions": 256,
+    "warmup_scope": "full value generation",
+    "model": "xgb",
+    "datasets": {
+      "8": "california",
+      "10": "diabetes",
+      "11": "compas",
+      "14": "adult",
+      "16": "bank",
+      "20": "german"
+    },
+    "input": "six real datasets, one family for the whole sweep",
+    "timing": "full centered value generation, excluding fitting/loading"
+  },
+  "protocol_sha256": "23e25e3e6aa90b684cea491f6e3db0e944a8af8e4f62ce1cdb7dec98ee127bfe",
+  "execution_fingerprint": {
+    "protocol_version": "fp32-v6-seeds-0-through-9",
+    "sources": {
+      "experiments/checkpoints.py": "1608daf7cb6f88727ceb7d58f39c5c671996d4c99d2ed3fddd720747e1e377e7",
+      "experiments/figstyle.py": "9372d4ebbc32c9fdbb364adf76fdcf2b0708a4c50490fc639f06c9af360a61d9",
+      "experiments/measurement.py": "01a1938187cbbdce40d3d10fd6f10265aaf70e288a1fc536f182f4c5b817f226",
+      "experiments/model_data.py": "7d8729cce2fb65384d31dc304942dc16cf33d80ab9c1f9550ef8d0645a9fe5c7",
+      "experiments/model_games.py": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+      "experiments/numerical_protocol.py": "e30e1b7dc161906d4b132b4b56bb8b2955c15a52e7fc9baef5505f0d393d4ec5",
+      "experiments/paper_california.py": "19697c579d75ba024d7f2a552f8f4714504ae9c7fe98f811b9c6aa74065954f9",
+      "experiments/paper_measure.py": "aa729d46199abe5454fdeb4365c3d530053d93510f9986ec1a6b02da30493209",
+      "experiments/paper_tables.py": "86589298aac1d05e4ac081ce7d6605c15f4a3d15ef263f91df3d29c2a7564985",
+      "experiments/plot_figures.py": "ca6d332627d07f35ca25d0fcc1e9bf4ad588897f319125897a210ea7f6a34480",
+      "experiments/prepare_model_games.py": "d5f54a20e017d2ffe6ce939c6ae75b0b80a6ddfe99b896dfe49648f0484d532a",
+      "experiments/run_paper.py": "bcb7c5f8c52e5d5784a3a8dc15172666a4230b21f91f639752ce846c5c6697b7",
+      "experiments/run_revision.py": "7e8da3d7efe0865dfd46b77f877f4806b88889ad2e4cd4ae85133f343e3f16d7",
+      "experiments/table1_runtime.py": "9692a16072f39a3c21e162b9b060cea63f788f7357c2f02dcf94597e19407fee",
+      "experiments/table2_batch.py": "ff12fbb31164f9ad60332f32955ad875a1e2e7d961273791a7a48e167f6e297a",
+      "experiments/table3_order.py": "5f739002363de02beaf25158f43b43fef0d7be5bdf8de83fbb1e68b7eff01245",
+      "experiments/table4_approximation.py": "652ab04eb25b73d234e7af23d447df3ed5eb9642fc421c5681f5e4616540ae05",
+      "experiments/table5_stability.py": "10ce51f5999686e8f6a7154f3c819fa5e63b7507c00c09042e1371e76f7a2534",
+      "experiments/table6_generation.py": "b331db1ca974ed6138300e0e0b4e86635c7debe00f7fa23a4ee97c45bcca7327",
+      "experiments/train_models.py": "4f2dd6bf448b0944351448a11c542afae0f0415c6c5df14a58f32c9ed8895bbe",
+      "experiments/verify_checkpoints.py": "c9ca33ae1edaa21751a8be7fb8ca7da3a8bd756da3292b4a07ab61cc7b7f37c7",
+      "tt_fsi/__init__.py": "ed6f6d47ba4fa5880a00c35b1a2c6d62469a4aeb38f1cd8e2d769007202d66bd",
+      "tt_fsi/_validation.py": "75a196195445c0dcfc9795aedbf9869b516c9e8d33dc7e381ec567aa6c5290e2",
+      "tt_fsi/core/__init__.py": "a646c913a101481869315a4947f133c3577505a27211c3cecb5af296bf9de756",
+      "tt_fsi/core/correction.py": "94166577900e410aa74dc4092e080fb4e2db35472a0cf2e7d6de05bac9c01d03",
+      "tt_fsi/core/fsi_efficient.py": "9b08423dda14ae9f023824a9392d13716abb90a7a883327f685fd0ac79dedaa3",
+      "tt_fsi/core/generic_operator.py": "12f3db5fb7f5ad57fada30214f44cba1b43a6f55a7c82beccd8873fc86ee4421",
+      "tt_fsi/core/gpu_tt.py": "d6a8cb6b70266b1bc3b0c13c140051dcef8ffe2e60a3d48d9752cbd683bdead0",
+      "tt_fsi/core/matvec_efficient.py": "fc4548bab4abbd0730964265cb121d286bad9718c5bd75723e0b6dc064c0f459",
+      "tt_fsi/core/mobius.py": "e0590956e2ee213c68e4b3217ed2d68e3020d7842f8a756a314b74a7fc6b8eab",
+      "tt_fsi/core/weight.py": "d0dcfcbd22bbfade1e679702e4df291294b7ab0de6fc85982b43d80135c3d6f5",
+      "tt_fsi/naive/__init__.py": "e740c4902f5b5343a0651e308de0cb6f05cb9fdf436218082723dd4af441a039",
+      "tt_fsi/naive/fsi_naive.py": "77ab547b80ba708e4e49bbfd86df0f7b43f4b20036258083b2a1ec7e3b988919",
+      "tt_fsi/naive/mobius_naive.py": "d5399ffaa6a4f229d4c3680083e0d5d833189d7922191f632bb875d78cff7b73"
+    },
+    "dependency_versions": {
+      "numpy": "2.4.3",
+      "scipy": "1.17.1",
+      "shapiq": "1.4.1",
+      "cupy-cuda12x": "14.1.1",
+      "scikit-learn": "1.8.0",
+      "xgboost": "3.4.1",
+      "lightgbm": "4.7.0",
+      "torch": "2.10.0+cpu"
+    }
+  },
+  "origin": "measured",
+  "created_at": "2026-09-18T06:48:44.823827+00:00",
+  "records": [
+    {
+      "d": 8,
+      "dataset": "california",
+      "model": "xgb",
+      "status": "complete",
+      "samples_ms": [
+        3.4538451582193375,
+        3.900290932506323,
+        4.661659011617303,
+        3.625132841989398,
+        4.348887130618095,
+        4.208812955766916,
+        5.464390851557255,
+        5.070532904937863,
+        4.296021070331335,
+        4.542953101918101
+      ],
+      "mean_ms": 4.357252595946193,
+      "std_ms": 0.5872379212973425,
+      "value_hashes": [
+        "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+        "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+        "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+        "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+        "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+        "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+        "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+        "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+        "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+        "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca"
+      ],
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "per_run": [
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+          "seed": 0
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+          "seed": 1
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+          "seed": 2
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+          "seed": 3
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+          "seed": 4
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+          "seed": 5
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+          "seed": 6
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+          "seed": 7
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+          "seed": 8
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+          "seed": 9
+        }
+      ],
+      "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+      "input": {
+        "identity": {
+          "dataset": "california",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "b6c4b9907afe0e18583a6e08739e94b05063429d7a8c26d424657ff3d97d70e0",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "6463c0450bd03f0abf1f7b03211a89b716e53422d870b9166ae9b052dd6b71e3",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 8,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.0038545780116692185,
+        "npz_sha256": "6dc084a523628e75369059bab5697818434bf416b5be31fe927edc304dc30b1c",
+        "d": 8,
+        "source": "saved_model_checkpoint",
+        "sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca"
+      }
+    },
+    {
+      "d": 10,
+      "dataset": "diabetes",
+      "model": "xgb",
+      "status": "complete",
+      "samples_ms": [
+        13.550912030041218,
+        13.571284012869,
+        12.878622859716415,
+        14.236300019547343,
+        12.761506019160151,
+        12.875804910436273,
+        13.299911981448531,
+        13.257824117317796,
+        11.928105959668756,
+        12.743734987452626
+      ],
+      "mean_ms": 13.110400689765811,
+      "std_ms": 0.5911437536946126,
+      "value_hashes": [
+        "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+        "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+        "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+        "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+        "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+        "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+        "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+        "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+        "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+        "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc"
+      ],
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "per_run": [
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+          "seed": 0
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+          "seed": 1
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+          "seed": 2
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+          "seed": 3
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+          "seed": 4
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+          "seed": 5
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+          "seed": 6
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+          "seed": 7
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+          "seed": 8
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+          "seed": 9
+        }
+      ],
+      "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+      "input": {
+        "identity": {
+          "dataset": "diabetes",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "bc508c235704904deed0a3dcd0828a07258be809e129265266ed07536fb00218",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "ce9cd8e3b1a14d099465d848c5f22ae7fa45922bdeb9db9ac2cd7c15c860abbd",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 10,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.011717903951648623,
+        "npz_sha256": "d2dcb88c6790e938882969da6e108fa504c22ba78d18817069e46e5a2c2ff2ec",
+        "d": 10,
+        "source": "saved_model_checkpoint",
+        "sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc"
+      }
+    },
+    {
+      "d": 11,
+      "dataset": "compas",
+      "model": "xgb",
+      "status": "complete",
+      "samples_ms": [
+        25.66223219037056,
+        25.493466993793845,
+        24.8199210036546,
+        25.402172934263945,
+        25.88513004593551,
+        26.44006395712495,
+        25.287126190960407,
+        24.15194595232606,
+        25.03193891607225,
+        25.7281381636858
+      ],
+      "mean_ms": 25.390213634818792,
+      "std_ms": 0.5952854483217757,
+      "value_hashes": [
+        "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+        "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+        "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+        "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+        "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+        "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+        "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+        "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+        "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+        "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7"
+      ],
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "per_run": [
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+          "seed": 0
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+          "seed": 1
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+          "seed": 2
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+          "seed": 3
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+          "seed": 4
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+          "seed": 5
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+          "seed": 6
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+          "seed": 7
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+          "seed": 8
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+          "seed": 9
+        }
+      ],
+      "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+      "input": {
+        "identity": {
+          "dataset": "compas",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "5159e9d927cbbd43e7c23fc08b85edc69366339d9ce587d74344c7a62b0882b1",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "5f0169a8825a608cdc9649653c5e584917591b0742d18b2eb0c679e9277143a1",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 11,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.025235565030016005,
+        "npz_sha256": "8115d7195db354a910cf7e22c6cbe2f40cb674133823ae49f3e79e294a190093",
+        "d": 11,
+        "source": "saved_model_checkpoint",
+        "sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7"
+      }
+    },
+    {
+      "d": 14,
+      "dataset": "adult",
+      "model": "xgb",
+      "status": "complete",
+      "samples_ms": [
+        218.81090896204114,
+        217.9015229921788,
+        221.22934903018177,
+        218.0228428915143,
+        218.0878350045532,
+        217.2850570641458,
+        217.78098098002374,
+        218.75321702100337,
+        220.49113688990474,
+        220.16244404949248
+      ],
+      "mean_ms": 218.85252948850393,
+      "std_ms": 1.2587499198550849,
+      "value_hashes": [
+        "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+        "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+        "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+        "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+        "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+        "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+        "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+        "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+        "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+        "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1"
+      ],
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "per_run": [
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+          "seed": 0
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+          "seed": 1
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+          "seed": 2
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+          "seed": 3
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+          "seed": 4
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+          "seed": 5
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+          "seed": 6
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+          "seed": 7
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+          "seed": 8
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+          "seed": 9
+        }
+      ],
+      "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+      "input": {
+        "identity": {
+          "dataset": "adult",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "f9f54c71e2106c233fe14d66c882752fd04853bbe9a5c36850f86295c410fd19",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "13c3e66103b46fe8ebb4a3137c40967c716af553aa2bfdde5a38e49f6d9d42e9",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 14,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.19425588700687513,
+        "npz_sha256": "84677f604248a4a3d0411814fb4e0a91f9077473feab7bbb9836feec359bd6da",
+        "d": 14,
+        "source": "saved_model_checkpoint",
+        "sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1"
+      }
+    },
+    {
+      "d": 16,
+      "dataset": "bank",
+      "model": "xgb",
+      "status": "complete",
+      "samples_ms": [
+        932.7335339039564,
+        926.8058959860355,
+        916.1796041298658,
+        910.5692859739065,
+        908.6495509836823,
+        901.115955086425,
+        895.67507407628,
+        897.7117559406906,
+        911.8756931275129,
+        910.1161258295178
+      ],
+      "mean_ms": 911.1432475037873,
+      "std_ms": 11.24801880376607,
+      "value_hashes": [
+        "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+        "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+        "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+        "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+        "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+        "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+        "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+        "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+        "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+        "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331"
+      ],
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "per_run": [
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+          "seed": 0
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+          "seed": 1
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+          "seed": 2
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+          "seed": 3
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+          "seed": 4
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+          "seed": 5
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+          "seed": 6
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+          "seed": 7
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+          "seed": 8
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+          "seed": 9
+        }
+      ],
+      "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+      "input": {
+        "identity": {
+          "dataset": "bank",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "61c94b1aa3893fbb21f83ec465fda046f26cd66be633bebddba0f8c7784591be",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "cbeebae4075bded0b17fa7e2af7461a953f21916530b41260777b776d1f686cf",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 16,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.7346265650121495,
+        "npz_sha256": "9506827a60197840299864327bc9ff368ff5f8fbaf010a8a2e64230658ce0b42",
+        "d": 16,
+        "source": "saved_model_checkpoint",
+        "sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331"
+      }
+    },
+    {
+      "d": 20,
+      "dataset": "german",
+      "model": "xgb",
+      "status": "complete",
+      "samples_ms": [
+        16298.002349911258,
+        16361.758277984336,
+        16370.673748897389,
+        16303.381395991892,
+        16198.868660023436,
+        16255.23082795553,
+        16286.227718926966,
+        16291.07117606327,
+        16291.806875960901,
+        16288.046858971938
+      ],
+      "mean_ms": 16294.506789068691,
+      "std_ms": 46.08011028630638,
+      "value_hashes": [
+        "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+        "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+        "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+        "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+        "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+        "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+        "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+        "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+        "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+        "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9"
+      ],
+      "timing_protocol": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "warmup_seeds": [
+          0,
+          1
+        ],
+        "warmups": 2,
+        "runs": 10
+      },
+      "per_run": [
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+          "seed": 0
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+          "seed": 1
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+          "seed": 2
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+          "seed": 3
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+          "seed": 4
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+          "seed": 5
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+          "seed": 6
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+          "seed": 7
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+          "seed": 8
+        },
+        {
+          "status": "passed",
+          "outside_timing": true,
+          "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+          "seed": 9
+        }
+      ],
+      "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+      "input": {
+        "identity": {
+          "dataset": "german",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "957f5792796474d6e00977f00a2ea48fafa486d058f84e9400a65ea8c6ab4da6",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "29ead6a387529dd34caa50822224ee97fc264255483da0aeb57b3a2a3985a562",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 20,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 20.88680459500756,
+        "npz_sha256": "ac61ada7ff4188d3acf7ab0f878b21ab28850692b3c32df9b28e64078773f1e1",
+        "d": 20,
+        "source": "saved_model_checkpoint",
+        "sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9"
+      }
+    }
+  ],
+  "provenance": {
+    "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "versions": {
+      "numpy": "2.4.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.8.0",
+      "shapiq": "1.4.1",
+      "cupy-cuda12x": "14.1.1"
+    },
+    "measurement_source_sha256": "aa729d46199abe5454fdeb4365c3d530053d93510f9986ec1a6b02da30493209",
+    "historical_measurements_overwritten": false,
+    "sparse_core_storage": {},
+    "model": "xgb",
+    "inputs": {
+      "8": {
+        "identity": {
+          "dataset": "california",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "b6c4b9907afe0e18583a6e08739e94b05063429d7a8c26d424657ff3d97d70e0",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "6463c0450bd03f0abf1f7b03211a89b716e53422d870b9166ae9b052dd6b71e3",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 8,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.0038545780116692185,
+        "npz_sha256": "6dc084a523628e75369059bab5697818434bf416b5be31fe927edc304dc30b1c",
+        "d": 8,
+        "source": "saved_model_checkpoint",
+        "sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca"
+      },
+      "10": {
+        "identity": {
+          "dataset": "diabetes",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "bc508c235704904deed0a3dcd0828a07258be809e129265266ed07536fb00218",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "ce9cd8e3b1a14d099465d848c5f22ae7fa45922bdeb9db9ac2cd7c15c860abbd",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 10,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.011717903951648623,
+        "npz_sha256": "d2dcb88c6790e938882969da6e108fa504c22ba78d18817069e46e5a2c2ff2ec",
+        "d": 10,
+        "source": "saved_model_checkpoint",
+        "sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc"
+      },
+      "11": {
+        "identity": {
+          "dataset": "compas",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "5159e9d927cbbd43e7c23fc08b85edc69366339d9ce587d74344c7a62b0882b1",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "5f0169a8825a608cdc9649653c5e584917591b0742d18b2eb0c679e9277143a1",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 11,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.025235565030016005,
+        "npz_sha256": "8115d7195db354a910cf7e22c6cbe2f40cb674133823ae49f3e79e294a190093",
+        "d": 11,
+        "source": "saved_model_checkpoint",
+        "sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7"
+      },
+      "14": {
+        "identity": {
+          "dataset": "adult",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "f9f54c71e2106c233fe14d66c882752fd04853bbe9a5c36850f86295c410fd19",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "13c3e66103b46fe8ebb4a3137c40967c716af553aa2bfdde5a38e49f6d9d42e9",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 14,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.19425588700687513,
+        "npz_sha256": "84677f604248a4a3d0411814fb4e0a91f9077473feab7bbb9836feec359bd6da",
+        "d": 14,
+        "source": "saved_model_checkpoint",
+        "sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1"
+      },
+      "16": {
+        "identity": {
+          "dataset": "bank",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "61c94b1aa3893fbb21f83ec465fda046f26cd66be633bebddba0f8c7784591be",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "cbeebae4075bded0b17fa7e2af7461a953f21916530b41260777b776d1f686cf",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 16,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.7346265650121495,
+        "npz_sha256": "9506827a60197840299864327bc9ff368ff5f8fbaf010a8a2e64230658ce0b42",
+        "d": 16,
+        "source": "saved_model_checkpoint",
+        "sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331"
+      },
+      "20": {
+        "identity": {
+          "dataset": "german",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "957f5792796474d6e00977f00a2ea48fafa486d058f84e9400a65ea8c6ab4da6",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "29ead6a387529dd34caa50822224ee97fc264255483da0aeb57b3a2a3985a562",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 20,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 20.88680459500756,
+        "npz_sha256": "ac61ada7ff4188d3acf7ab0f878b21ab28850692b3c32df9b28e64078773f1e1",
+        "d": 20,
+        "source": "saved_model_checkpoint",
+        "sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9"
+      }
+    }
+  },
+  "content_sha256": "2095037921229b215e577eddab40d1ea8585090cc3e15a2cc01a8d9764924934"
+}

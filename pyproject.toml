@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tt-fsi"
+version = "0.1.0"
+description = "Tensor-train Faith-Shap interaction operators"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10"]
+
+[tool.setuptools]
+packages = ["tt_fsi", "tt_fsi.core", "tt_fsi.naive"]

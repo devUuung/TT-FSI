@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "encoding": "train-only ordinal categories; one original feature per FSI player",
+  "columns": [
+    {
+      "name": "MedInc",
+      "kind": "numeric",
+      "median": 3.5313
+    },
+    {
+      "name": "HouseAge",
+      "kind": "numeric",
+      "median": 29.0
+    },
+    {
+      "name": "AveRooms",
+      "kind": "numeric",
+      "median": 5.2404181184668985
+    },
+    {
+      "name": "AveBedrms",
+      "kind": "numeric",
+      "median": 1.048888888888889
+    },
+    {
+      "name": "Population",
+      "kind": "numeric",
+      "median": 1164.0
+    },
+    {
+      "name": "AveOccup",
+      "kind": "numeric",
+      "median": 2.8204225352112675
+    },
+    {
+      "name": "Latitude",
+      "kind": "numeric",
+      "median": 34.26
+    },
+    {
+      "name": "Longitude",
+      "kind": "numeric",
+      "median": -118.49
+    }
+  ],
+  "mean": [
+    3.8677683094859736,
+    28.529866000454234,
+    5.421373763842655,
+    1.0938045043861904,
+    1428.8902263608145,
+    2.989328966790612,
+    35.63258914376563,
+    -119.56576122340815
+  ],
+  "scale": [
+    1.9095551657736716,
+    12.575912177768293,
+    2.249673425918303,
+    0.44331715673229666,
+    1122.2705664764858,
+    5.299831331715997,
+    2.144817151311129,
+    2.0097701772991847
+  ],
+  "fit_rows": "training split only"
+}

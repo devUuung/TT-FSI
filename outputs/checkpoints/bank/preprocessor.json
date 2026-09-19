@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "encoding": "train-only ordinal categories; one original feature per FSI player",
+  "columns": [
+    {
+      "name": "age",
+      "kind": "numeric",
+      "median": 39.0
+    },
+    {
+      "name": "job",
+      "kind": "categorical",
+      "categories": [
+        "admin.",
+        "blue-collar",
+        "entrepreneur",
+        "housemaid",
+        "management",
+        "retired",
+        "self-employed",
+        "services",
+        "student",
+        "technician",
+        "unemployed",
+        "unknown"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "marital",
+      "kind": "categorical",
+      "categories": [
+        "divorced",
+        "married",
+        "single"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "education",
+      "kind": "categorical",
+      "categories": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "unknown"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "default",
+      "kind": "categorical",
+      "categories": [
+        "no",
+        "yes"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "balance",
+      "kind": "numeric",
+      "median": 445.0
+    },
+    {
+      "name": "housing",
+      "kind": "categorical",
+      "categories": [
+        "no",
+        "yes"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "loan",
+      "kind": "categorical",
+      "categories": [
+        "no",
+        "yes"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "contact",
+      "kind": "categorical",
+      "categories": [
+        "cellular",
+        "telephone",
+        "unknown"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "day",
+      "kind": "numeric",
+      "median": 16.0
+    },
+    {
+      "name": "month",
+      "kind": "categorical",
+      "categories": [
+        "apr",
+        "aug",
+        "dec",
+        "feb",
+        "jan",
+        "jul",
+        "jun",
+        "mar",
+        "may",
+        "nov",
+        "oct",
+        "sep"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "duration",
+      "kind": "numeric",
+      "median": 179.0
+    },
+    {
+      "name": "campaign",
+      "kind": "numeric",
+      "median": 2.0
+    },
+    {
+      "name": "pdays",
+      "kind": "numeric",
+      "median": -1.0
+    },
+    {
+      "name": "previous",
+      "kind": "numeric",
+      "median": 0.0
+    },
+    {
+      "name": "poutcome",
+      "kind": "categorical",
+      "categories": [
+        "failure",
+        "other",
+        "success",
+        "unknown"
+      ],
+      "missing_or_unknown": -1
+    }
+  ],
+  "mean": [
+    40.971314025022465,
+    4.372295569226515,
+    1.1721158498652104,
+    1.2292804313264671,
+    0.01769544480541923,
+    1357.956383493468,
+    0.5542614225478676,
+    0.16236953065597567,
+    0.6359300476947536,
+    15.79328817308357,
+    5.507880002764913,
+    258.00711965162094,
+    2.758623073201078,
+    40.108038985276835,
+    0.5804589755996405,
+    2.560378793115366
+  ],
+  "scale": [
+    10.631046684737948,
+    3.2744849594684964,
+    0.6093345186332405,
+    0.7462482744559015,
+    0.13184201165995557,
+    3051.606792381485,
+    0.49704697768220163,
+    0.36878946049281425,
+    0.8956953946179209,
+    8.35377780822249,
+    3.003130226577631,
+    260.0771535948249,
+    3.066283619542143,
+    100.06340809057994,
+    2.508671568265926,
+    0.9886690991918035
+  ],
+  "fit_rows": "training split only"
+}

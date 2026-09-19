@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "dataset": "bank",
+    "model": "xgb",
+    "checkpoint_manifest_sha256": "61c94b1aa3893fbb21f83ec465fda046f26cd66be633bebddba0f8c7784591be",
+    "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+    "prepared_sha256": "cbeebae4075bded0b17fa7e2af7461a953f21916530b41260777b776d1f686cf",
+    "definition": "centered interventional; positive probability for classification",
+    "d": 16,
+    "background_rows": 100,
+    "chunk_coalitions": 256
+  },
+  "generation_seconds": 0.7346265650121495,
+  "npz_sha256": "9506827a60197840299864327bc9ff368ff5f8fbaf010a8a2e64230658ce0b42"
+}

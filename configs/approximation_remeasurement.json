@@ -1,0 +1,11 @@
+{
+  "tables": [
+    4
+  ],
+  "refresh_tables": [
+    4
+  ],
+  "california": false,
+  "figures": false,
+  "output_directory": "paper-results/seeds-0-9-approximation"
+}

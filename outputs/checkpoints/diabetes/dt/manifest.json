@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "dataset": "diabetes",
+  "model": "dt",
+  "task": "regression",
+  "threads": 4,
+  "seed": 0,
+  "versions": {
+    "numpy": "2.4.3",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.5",
+    "torch": "2.10.0+cpu",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "dataset_files": {
+    "prepared.npz": "ce9cd8e3b1a14d099465d848c5f22ae7fa45922bdeb9db9ac2cd7c15c860abbd",
+    "preprocessor.json": "550605ea69fa1116e5914746880ca1ecb172ce365898dcb162b621039902027a",
+    "dataset.json": "5af126d69f38456dfc07799566e0a97fe1042b8604775aed9dbbf2d1675fa1a8"
+  },
+  "files": {
+    "model.joblib": "d17bb503ecf5c6d99c9df8d7f0f220d158ac3240828250b33347100bcc139efc",
+    "test_predictions.npy": "4d373affd1219aa0a97616c03ca57cbf380076f3006c4dea4b46fd22b0e224ab"
+  }
+}

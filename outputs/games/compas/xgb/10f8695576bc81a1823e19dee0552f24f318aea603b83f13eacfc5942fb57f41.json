@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "dataset": "compas",
+    "model": "xgb",
+    "checkpoint_manifest_sha256": "5159e9d927cbbd43e7c23fc08b85edc69366339d9ce587d74344c7a62b0882b1",
+    "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+    "prepared_sha256": "5f0169a8825a608cdc9649653c5e584917591b0742d18b2eb0c679e9277143a1",
+    "definition": "centered interventional; positive probability for classification",
+    "d": 11,
+    "background_rows": 100,
+    "chunk_coalitions": 256
+  },
+  "generation_seconds": 0.025235565030016005,
+  "npz_sha256": "8115d7195db354a910cf7e22c6cbe2f40cb674133823ae49f3e79e294a190093"
+}

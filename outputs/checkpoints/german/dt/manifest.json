@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "dataset": "german",
+  "model": "dt",
+  "task": "classification",
+  "threads": 4,
+  "seed": 0,
+  "versions": {
+    "numpy": "2.4.3",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.5",
+    "torch": "2.10.0+cpu",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "dataset_files": {
+    "prepared.npz": "29ead6a387529dd34caa50822224ee97fc264255483da0aeb57b3a2a3985a562",
+    "preprocessor.json": "b354b6075311766ea8c37768fe2b84645c324789ab07d069a77dde8e582ecfd0",
+    "dataset.json": "d2ee22c487110a65c7a0585d22082ac53c5f588694e189c9f3028c8b0b32f4fa"
+  },
+  "files": {
+    "model.joblib": "9a0ea11f89e3033e4d82e72a6bec60ff52fa482f8bed691aed2675afca913d92",
+    "test_predictions.npy": "8e374007a39b696dcdd595b58da6e92296895488f7258958e7ceae70a1efbe2d"
+  }
+}

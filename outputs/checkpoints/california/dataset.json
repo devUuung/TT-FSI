@@ -1,0 +1,29 @@
+{
+  "dataset": "california",
+  "task": "regression",
+  "n_rows": 20640,
+  "dimension": 8,
+  "feature_names": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "sources": [
+    {
+      "provider": "sklearn.datasets.fetch_california_housing"
+    }
+  ],
+  "parsed_data_sha256": "90d8ca7fce2b9a818ef5114842889be624c5b9158b24996eec5c796bdce85ef2",
+  "positive_class": null,
+  "split_seed": 0,
+  "n_train": 13209,
+  "n_validation": 3303,
+  "n_test": 4128,
+  "background_selection": "first 100 training split indices",
+  "explained_row": 14740
+}

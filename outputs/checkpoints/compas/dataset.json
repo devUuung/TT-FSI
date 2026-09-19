@@ -1,0 +1,33 @@
+{
+  "dataset": "compas",
+  "task": "classification",
+  "n_rows": 6172,
+  "dimension": 11,
+  "feature_names": [
+    "age",
+    "sex",
+    "race",
+    "juv_fel_count",
+    "juv_misd_count",
+    "juv_other_count",
+    "priors_count",
+    "c_charge_degree",
+    "c_charge_desc",
+    "days_b_screening_arrest",
+    "length_of_stay"
+  ],
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/propublica/compas-analysis/master/compas-scores-two-years.csv",
+      "sha256": "c451db85908b2f7fef1d83203bedf6b71ecda0d5af468d82ae62178f91d0cc7d"
+    }
+  ],
+  "parsed_data_sha256": "646175d9d986f5db9204d823545d6d0b922e09894ad424d4ab3f2354863f4463",
+  "positive_class": "two_year_recid=1",
+  "split_seed": 0,
+  "n_train": 3949,
+  "n_validation": 988,
+  "n_test": 1235,
+  "background_selection": "first 100 training split indices",
+  "explained_row": 2473
+}

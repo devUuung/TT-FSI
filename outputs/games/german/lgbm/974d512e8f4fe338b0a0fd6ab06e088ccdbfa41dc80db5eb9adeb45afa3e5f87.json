@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "dataset": "german",
+    "model": "lgbm",
+    "checkpoint_manifest_sha256": "6afa345502e326653da6c51f3031f02093da65af90373fcb87ae385a6228b51f",
+    "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+    "prepared_sha256": "29ead6a387529dd34caa50822224ee97fc264255483da0aeb57b3a2a3985a562",
+    "definition": "centered interventional; positive probability for classification",
+    "d": 20,
+    "background_rows": 100,
+    "chunk_coalitions": 256
+  },
+  "generation_seconds": 24.356179420952685,
+  "npz_sha256": "948ff25fe579aa17e6cb16e9909e2a9b59f7b452db4082a91047b74d66ef6478"
+}

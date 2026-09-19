@@ -1,0 +1,362 @@
+{
+  "schema_version": 1,
+  "kind": "new_saved_model_suite",
+  "config": {
+    "schema_version": 1,
+    "seed": 0,
+    "datasets": [
+      "california",
+      "diabetes",
+      "compas",
+      "adult",
+      "bank",
+      "german"
+    ],
+    "models": [
+      "dt",
+      "lgbm",
+      "xgb",
+      "mlp"
+    ],
+    "test_fraction": 0.2,
+    "validation_fraction_of_training": 0.2,
+    "background_rows": 100,
+    "threads": 4,
+    "tree_max_depth": 6,
+    "boosting_estimators": 30,
+    "xgb_device": "cuda:0",
+    "mlp": {
+      "hidden_sizes": [
+        32,
+        16
+      ],
+      "learning_rate": 0.001,
+      "batch_size": 256,
+      "max_epochs": 300,
+      "patience": 25,
+      "min_delta": 1e-06
+    },
+    "output_directory": "models/checkpoints"
+  },
+  "versions": {
+    "numpy": "2.4.3",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.5",
+    "torch": "2.10.0+cpu",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "training_source_sha256": {
+    "experiments/train_models.py": "1932f6e3eebede9eb4956f3190b9ea5dcabd0b2b75dcf6515e9d52ccadc4f4a5",
+    "tt_fsi/model_data.py": "7d8729cce2fb65384d31dc304942dc16cf33d80ab9c1f9550ef8d0645a9fe5c7",
+    "tt_fsi/checkpoints.py": "1983961ff872e8f8584c9d782b613ab20892c3ffa30faee80d845d59b2dd375c"
+  },
+  "rows": [
+    {
+      "dataset": "california",
+      "model": "dt",
+      "task": "regression",
+      "fit_seconds": 0.027436468983069062,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "rmse": 0.7171221161677863,
+        "r2": 0.6056120280049226
+      },
+      "manifest_sha256": "314ac075ce84cfed1f8d358494c7715abcbababe1989fc49b6612b2b2a9c75d4"
+    },
+    {
+      "dataset": "california",
+      "model": "lgbm",
+      "task": "regression",
+      "fit_seconds": 0.024207268026657403,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "rmse": 0.544679280835894,
+        "r2": 0.7724802303781755
+      },
+      "manifest_sha256": "b9cac9d6dded947bc4b5d31d390a0d011313f30e43f9839843fd54d3e751488e"
+    },
+    {
+      "dataset": "california",
+      "model": "xgb",
+      "task": "regression",
+      "fit_seconds": 0.2975845199543983,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "rmse": 0.4821471282137422,
+        "r2": 0.8217224745793845
+      },
+      "manifest_sha256": "b6c4b9907afe0e18583a6e08739e94b05063429d7a8c26d424657ff3d97d70e0"
+    },
+    {
+      "dataset": "california",
+      "model": "mlp",
+      "task": "regression",
+      "fit_seconds": 3.146825700008776,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "rmse": 0.5243926494953611,
+        "r2": 0.7891126063051664
+      },
+      "manifest_sha256": "eb0c5cba1e4cc00691c8c424ce388686e63b559536b65be87aa10b93f68087fc"
+    },
+    {
+      "dataset": "diabetes",
+      "model": "dt",
+      "task": "regression",
+      "fit_seconds": 0.0011996430112048984,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "rmse": 73.51860710996088,
+        "r2": -0.05402934955665595
+      },
+      "manifest_sha256": "2f3317790f52586b51e758a544ed268c34ce3626b68102728ee2dc3d63a72100"
+    },
+    {
+      "dataset": "diabetes",
+      "model": "lgbm",
+      "task": "regression",
+      "fit_seconds": 0.0029376839520409703,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "rmse": 58.39457257673629,
+        "r2": 0.33502834832491524
+      },
+      "manifest_sha256": "57177d2323994503b418b5235f43cfdaf56d5dec55f596c3ca5c22bdab7a877c"
+    },
+    {
+      "dataset": "diabetes",
+      "model": "xgb",
+      "task": "regression",
+      "fit_seconds": 0.024720149987842888,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "rmse": 59.810716473439605,
+        "r2": 0.30238441683247763
+      },
+      "manifest_sha256": "bc508c235704904deed0a3dcd0828a07258be809e129265266ed07536fb00218"
+    },
+    {
+      "dataset": "diabetes",
+      "model": "mlp",
+      "task": "regression",
+      "fit_seconds": 0.04626819503027946,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "rmse": 57.64446004415819,
+        "r2": 0.35200252368620033
+      },
+      "manifest_sha256": "f778a6817119fc0b801851f6cc0bfa77976c31cf646059f6ae7fcae723dde9dc"
+    },
+    {
+      "dataset": "compas",
+      "model": "dt",
+      "task": "classification",
+      "fit_seconds": 0.005812159972265363,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.6672064777327935,
+        "roc_auc": 0.704899980434978,
+        "log_loss": 1.0767709590292427
+      },
+      "manifest_sha256": "ea16c8c21d8d5c45f80d9c401fdbe31501687a39ac47c2181e01b2fcdc4e100a"
+    },
+    {
+      "dataset": "compas",
+      "model": "lgbm",
+      "task": "classification",
+      "fit_seconds": 0.011451956001110375,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.6874493927125506,
+        "roc_auc": 0.741482605637899,
+        "log_loss": 0.5956045344146363
+      },
+      "manifest_sha256": "6f9ac48c18d734ba7065e5fdc96fe5d130d7abc187620c05d83b603e5ff21869"
+    },
+    {
+      "dataset": "compas",
+      "model": "xgb",
+      "task": "classification",
+      "fit_seconds": 0.02558907400816679,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.680161943319838,
+        "roc_auc": 0.7356342504217055,
+        "log_loss": 0.6094701613617926
+      },
+      "manifest_sha256": "5159e9d927cbbd43e7c23fc08b85edc69366339d9ce587d74344c7a62b0882b1"
+    },
+    {
+      "dataset": "compas",
+      "model": "mlp",
+      "task": "classification",
+      "fit_seconds": 0.2111494509736076,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.68582995951417,
+        "roc_auc": 0.7446500240596892,
+        "log_loss": 0.591798305899619
+      },
+      "manifest_sha256": "b8d44d5844669d8ca2dcd36ad5075fcb9a6a1a4bb79e77d9850d645c5745bae6"
+    },
+    {
+      "dataset": "adult",
+      "model": "dt",
+      "task": "classification",
+      "fit_seconds": 0.03334766399348155,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.853618589415498,
+        "roc_auc": 0.8889680411942711,
+        "log_loss": 0.3394361583400513
+      },
+      "manifest_sha256": "f85f2b009925d8008e15c12362d4d4c14fe257f61b3a69fe42c77794850123f0"
+    },
+    {
+      "dataset": "adult",
+      "model": "lgbm",
+      "task": "classification",
+      "fit_seconds": 0.036744191020261496,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.8634455932029891,
+        "roc_auc": 0.9177607355218624,
+        "log_loss": 0.3028061431049421
+      },
+      "manifest_sha256": "2c40b8d3ae5e35942a60301686ec0bdc35c39af666a2de91fbbcbf6621bd9b4c"
+    },
+    {
+      "dataset": "adult",
+      "model": "xgb",
+      "task": "classification",
+      "fit_seconds": 0.03457559598609805,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.8760364418057119,
+        "roc_auc": 0.9281282006032343,
+        "log_loss": 0.2773765250770461
+      },
+      "manifest_sha256": "f9f54c71e2106c233fe14d66c882752fd04853bbe9a5c36850f86295c410fd19"
+    },
+    {
+      "dataset": "adult",
+      "model": "mlp",
+      "task": "classification",
+      "fit_seconds": 2.3765672590234317,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.8530044016787798,
+        "roc_auc": 0.9055449571472434,
+        "log_loss": 0.32015202540732696
+      },
+      "manifest_sha256": "e9884f82804f5a943c8a9e5088ac672116dac1acf7d59312198d3877d7d9bb6e"
+    },
+    {
+      "dataset": "bank",
+      "model": "dt",
+      "task": "classification",
+      "fit_seconds": 0.037969021999742836,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.8984850160345018,
+        "roc_auc": 0.8650607294158589,
+        "log_loss": 0.2699745744573157
+      },
+      "manifest_sha256": "47207074224fd602f219f9cf1af96ad66826d468c92362ac5b1d5de9772a8107"
+    },
+    {
+      "dataset": "bank",
+      "model": "lgbm",
+      "task": "classification",
+      "fit_seconds": 0.03648901998531073,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.9025765785690589,
+        "roc_auc": 0.9194192679326668,
+        "log_loss": 0.2170879637143163
+      },
+      "manifest_sha256": "5c6166bcd0149a6296a93f64132764a8b5e60abab983c329bd7dba289e385744"
+    },
+    {
+      "dataset": "bank",
+      "model": "xgb",
+      "task": "classification",
+      "fit_seconds": 0.03543641802389175,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.9042353201371226,
+        "roc_auc": 0.9276587836598158,
+        "log_loss": 0.20605191615890203
+      },
+      "manifest_sha256": "61c94b1aa3893fbb21f83ec465fda046f26cd66be633bebddba0f8c7784591be"
+    },
+    {
+      "dataset": "bank",
+      "model": "mlp",
+      "task": "classification",
+      "fit_seconds": 2.3671728880144656,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.8982638504920933,
+        "roc_auc": 0.899327484307178,
+        "log_loss": 0.23381416989737946
+      },
+      "manifest_sha256": "0c2fc8f4f2616644bf46f99c933a6316886b09e0cd4b5fcb4a5034fb132072d4"
+    },
+    {
+      "dataset": "german",
+      "model": "dt",
+      "task": "classification",
+      "fit_seconds": 0.0015941449673846364,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.69,
+        "roc_auc": 0.6796428571428571,
+        "log_loss": 3.828617614983736
+      },
+      "manifest_sha256": "e2732101b272fe01398758c910d0c7d1c9af5cb0a58a079ccd423480399a9def"
+    },
+    {
+      "dataset": "german",
+      "model": "lgbm",
+      "task": "classification",
+      "fit_seconds": 0.005490293959155679,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.775,
+        "roc_auc": 0.7659523809523809,
+        "log_loss": 0.5170081023609191
+      },
+      "manifest_sha256": "6afa345502e326653da6c51f3031f02093da65af90373fcb87ae385a6228b51f"
+    },
+    {
+      "dataset": "german",
+      "model": "xgb",
+      "task": "classification",
+      "fit_seconds": 0.02302278799470514,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.76,
+        "roc_auc": 0.77,
+        "log_loss": 0.5665339240518317
+      },
+      "manifest_sha256": "957f5792796474d6e00977f00a2ea48fafa486d058f84e9400a65ea8c6ab4da6"
+    },
+    {
+      "dataset": "german",
+      "model": "mlp",
+      "task": "classification",
+      "fit_seconds": 0.06201756600057706,
+      "reload_max_abs_error": 0.0,
+      "test_metrics": {
+        "accuracy": 0.75,
+        "roc_auc": 0.7851190476190477,
+        "log_loss": 0.5061693717437653
+      },
+      "manifest_sha256": "0fbf5b53a9495749cbf8db51ec974962ffa8cff660ae6eea3ec673acf746205f"
+    }
+  ],
+  "status": "complete"
+}

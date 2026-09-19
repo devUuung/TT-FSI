@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "dataset": "compas",
+  "model": "dt",
+  "task": "classification",
+  "threads": 4,
+  "seed": 0,
+  "versions": {
+    "numpy": "2.4.3",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.5",
+    "torch": "2.10.0+cpu",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "dataset_files": {
+    "prepared.npz": "5f0169a8825a608cdc9649653c5e584917591b0742d18b2eb0c679e9277143a1",
+    "preprocessor.json": "4dd6285ed2b25030411f5fd2bfbbc9ded97df3f2916d2550c282fe42199910bf",
+    "dataset.json": "028b9490e39d940d4d44fbb85789c446c0b65954db8643893a258c77a1e4832c"
+  },
+  "files": {
+    "model.joblib": "e3ac1c1c8f596ca93180bd449220c49b2c96fe46c86f733850f2da3b882ed90a",
+    "test_predictions.npy": "0674bef47185afb98bbabbe3515c649c420ac2b44449cc0d41b33f73e944a1ee"
+  }
+}

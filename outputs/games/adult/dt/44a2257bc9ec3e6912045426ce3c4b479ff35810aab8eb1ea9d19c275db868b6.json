@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "dataset": "adult",
+    "model": "dt",
+    "checkpoint_manifest_sha256": "f85f2b009925d8008e15c12362d4d4c14fe257f61b3a69fe42c77794850123f0",
+    "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+    "prepared_sha256": "13c3e66103b46fe8ebb4a3137c40967c716af553aa2bfdde5a38e49f6d9d42e9",
+    "definition": "centered interventional; positive probability for classification",
+    "d": 14,
+    "background_rows": 100,
+    "chunk_coalitions": 256
+  },
+  "generation_seconds": 0.07206071098335087,
+  "npz_sha256": "a89301cd61f8591b4a75223b250c916884e82ddfd951b9364383cad1493635d7"
+}

@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "dataset": "california",
+    "model": "xgb",
+    "checkpoint_manifest_sha256": "b6c4b9907afe0e18583a6e08739e94b05063429d7a8c26d424657ff3d97d70e0",
+    "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+    "prepared_sha256": "6463c0450bd03f0abf1f7b03211a89b716e53422d870b9166ae9b052dd6b71e3",
+    "definition": "centered interventional; positive probability for classification",
+    "d": 8,
+    "background_rows": 100,
+    "chunk_coalitions": 256
+  },
+  "generation_seconds": 0.0038545780116692185,
+  "npz_sha256": "6dc084a523628e75369059bab5697818434bf416b5be31fe927edc304dc30b1c"
+}

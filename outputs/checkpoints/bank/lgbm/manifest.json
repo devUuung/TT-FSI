@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "dataset": "bank",
+  "model": "lgbm",
+  "task": "classification",
+  "threads": 4,
+  "seed": 0,
+  "versions": {
+    "numpy": "2.4.3",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.5",
+    "torch": "2.10.0+cpu",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "dataset_files": {
+    "prepared.npz": "cbeebae4075bded0b17fa7e2af7461a953f21916530b41260777b776d1f686cf",
+    "preprocessor.json": "dc3f8a05ecb7b378ce7b57636753afd97fa5d330f01c3a757035ac6a19afee4b",
+    "dataset.json": "b52d49bea7e946a4076a6d413ab50ec32e39607a96d0972e7ae75db20ecc85bf"
+  },
+  "files": {
+    "model.txt": "c54bdd980558d98b414dc275be7f6fcf4b76d8e3629bd7e6dab23499c4ae39a3",
+    "test_predictions.npy": "1c98bce04d25b1c2406608f4243b03372a409549319cf4cb9ec22b38d76ba22b"
+  }
+}

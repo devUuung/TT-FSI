@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "dataset": "compas",
+  "model": "xgb",
+  "task": "classification",
+  "threads": 4,
+  "seed": 0,
+  "versions": {
+    "numpy": "2.4.3",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.5",
+    "torch": "2.10.0+cpu",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "dataset_files": {
+    "prepared.npz": "5f0169a8825a608cdc9649653c5e584917591b0742d18b2eb0c679e9277143a1",
+    "preprocessor.json": "4dd6285ed2b25030411f5fd2bfbbc9ded97df3f2916d2550c282fe42199910bf",
+    "dataset.json": "028b9490e39d940d4d44fbb85789c446c0b65954db8643893a258c77a1e4832c"
+  },
+  "files": {
+    "test_predictions.npy": "1e97ada6cc2309f3f5bd13cbf62a3e2efa642755bb2c5c1866587d8eb44feb5b",
+    "model.ubj": "f31e329d89e7e73c979f99de84e7d9967081734ee2781271ee514fa149d97a45"
+  },
+  "training_device": "cuda:0"
+}

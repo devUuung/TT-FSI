@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "dataset": "california",
+  "model": "xgb",
+  "task": "regression",
+  "threads": 4,
+  "seed": 0,
+  "versions": {
+    "numpy": "2.4.3",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.5",
+    "torch": "2.10.0+cpu",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "dataset_files": {
+    "prepared.npz": "6463c0450bd03f0abf1f7b03211a89b716e53422d870b9166ae9b052dd6b71e3",
+    "preprocessor.json": "560abd519940f257de5f27bd00bcbfe2ba3f7f9572b0a022e277d833ff7c5742",
+    "dataset.json": "ac6e8b7e9c965c4c39540326b3c557ea62770b6eb934c5295ef1dba7ea84fac1"
+  },
+  "files": {
+    "test_predictions.npy": "e17ef93f9b97385376572e8dcbda9dc0255335b15b408fe17a6d76b704bdaf5d",
+    "model.ubj": "b6e22c1790b1e2bfc1d73ef241519ddb5c5f4d2fcdebbe1f9d10acd6367bf8e7"
+  },
+  "training_device": "cuda:0"
+}

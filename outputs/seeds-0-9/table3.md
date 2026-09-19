@@ -1,0 +1,11 @@
+# Table 3: Interaction-order runtime (ms)
+
+Origin: measured. Protocol SHA256: 4f153aacf47c8fbc2c667cbcf3eb9e987b6c4c1c6ccac0376fdd75862e98c783. OOM denotes failure to complete under the configured host or device memory constraints, including the host-memory cap used for baseline runs. FAIL denotes validation failure or another recorded error; no runtime is reported for those cells.
+
+| ell | FSII | CPU dense | GPU dense | GPU bounded |
+| --- | --- | --- | --- | --- |
+| 2 | 552.32 | 7.54 | 2.30 | 0.32 |
+| 3 | 896.89 | 9.07 | 2.32 | 0.32 |
+| 4 | 2188.29 | 10.81 | 2.31 | 0.31 |
+| 5 | 8574.36 | 12.36 | 2.30 | 0.31 |
+| 6 | 33600.33 | 13.95 | 2.27 | 0.31 |

@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "encoding": "train-only ordinal categories; one original feature per FSI player",
+  "columns": [
+    {
+      "name": "age",
+      "kind": "numeric",
+      "median": 37.0
+    },
+    {
+      "name": "workclass",
+      "kind": "categorical",
+      "categories": [
+        "Federal-gov",
+        "Local-gov",
+        "Never-worked",
+        "Private",
+        "Self-emp-inc",
+        "Self-emp-not-inc",
+        "State-gov",
+        "Without-pay"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "fnlwgt",
+      "kind": "numeric",
+      "median": 178823.5
+    },
+    {
+      "name": "education",
+      "kind": "categorical",
+      "categories": [
+        "10th",
+        "11th",
+        "12th",
+        "1st-4th",
+        "5th-6th",
+        "7th-8th",
+        "9th",
+        "Assoc-acdm",
+        "Assoc-voc",
+        "Bachelors",
+        "Doctorate",
+        "HS-grad",
+        "Masters",
+        "Preschool",
+        "Prof-school",
+        "Some-college"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "education_num",
+      "kind": "numeric",
+      "median": 10.0
+    },
+    {
+      "name": "marital_status",
+      "kind": "categorical",
+      "categories": [
+        "Divorced",
+        "Married-AF-spouse",
+        "Married-civ-spouse",
+        "Married-spouse-absent",
+        "Never-married",
+        "Separated",
+        "Widowed"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "occupation",
+      "kind": "categorical",
+      "categories": [
+        "Adm-clerical",
+        "Armed-Forces",
+        "Craft-repair",
+        "Exec-managerial",
+        "Farming-fishing",
+        "Handlers-cleaners",
+        "Machine-op-inspct",
+        "Other-service",
+        "Priv-house-serv",
+        "Prof-specialty",
+        "Protective-serv",
+        "Sales",
+        "Tech-support",
+        "Transport-moving"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "relationship",
+      "kind": "categorical",
+      "categories": [
+        "Husband",
+        "Not-in-family",
+        "Other-relative",
+        "Own-child",
+        "Unmarried",
+        "Wife"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "race",
+      "kind": "categorical",
+      "categories": [
+        "Amer-Indian-Eskimo",
+        "Asian-Pac-Islander",
+        "Black",
+        "Other",
+        "White"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "sex",
+      "kind": "categorical",
+      "categories": [
+        "Female",
+        "Male"
+      ],
+      "missing_or_unknown": -1
+    },
+    {
+      "name": "capital_gain",
+      "kind": "numeric",
+      "median": 0.0
+    },
+    {
+      "name": "capital_loss",
+      "kind": "numeric",
+      "median": 0.0
+    },
+    {
+      "name": "hours_per_week",
+      "kind": "numeric",
+      "median": 40.0
+    },
+    {
+      "name": "native_country",
+      "kind": "categorical",
+      "categories": [
+        "Cambodia",
+        "Canada",
+        "China",
+        "Columbia",
+        "Cuba",
+        "Dominican-Republic",
+        "Ecuador",
+        "El-Salvador",
+        "England",
+        "France",
+        "Germany",
+        "Greece",
+        "Guatemala",
+        "Haiti",
+        "Holand-Netherlands",
+        "Honduras",
+        "Hong",
+        "Hungary",
+        "India",
+        "Iran",
+        "Ireland",
+        "Italy",
+        "Jamaica",
+        "Japan",
+        "Laos",
+        "Mexico",
+        "Nicaragua",
+        "Outlying-US(Guam-USVI-etc)",
+        "Peru",
+        "Philippines",
+        "Poland",
+        "Portugal",
+        "Puerto-Rico",
+        "Scotland",
+        "South",
+        "Taiwan",
+        "Thailand",
+        "Trinadad&Tobago",
+        "United-States",
+        "Vietnam",
+        "Yugoslavia"
+      ],
+      "missing_or_unknown": -1
+    }
+  ],
+  "mean": [
+    38.70365986307505,
+    2.8695693902360997,
+    189855.73379614818,
+    10.284119265468041,
+    10.08090728773434,
+    2.616482180561776,
+    5.566574956811056,
+    1.443278520698701,
+    3.667637084906264,
+    0.6678290357668437,
+    1098.9027129054962,
+    89.26204491650138,
+    40.312783927314605,
+    35.73267643483268
+  ],
+  "scale": [
+    13.749465291648415,
+    1.4650276606878467,
+    105289.19287424097,
+    3.8701810206529426,
+    2.575461567648621,
+    1.5080392029141036,
+    4.235591805115599,
+    1.6027714178380488,
+    0.8459665506360255,
+    0.470991947652504,
+    7553.237456738666,
+    405.95217047422733,
+    12.35951694883881,
+    7.798280300442346
+  ],
+  "fit_rows": "training split only"
+}

@@ -1,0 +1,40 @@
+{
+  "dataset": "adult",
+  "task": "classification",
+  "n_rows": 48842,
+  "dimension": 14,
+  "feature_names": [
+    "age",
+    "workclass",
+    "fnlwgt",
+    "education",
+    "education_num",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "capital_gain",
+    "capital_loss",
+    "hours_per_week",
+    "native_country"
+  ],
+  "sources": [
+    {
+      "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data",
+      "sha256": "5b00264637dbfec36bdeaab5676b0b309ff9eb788d63554ca0a249491c86603d"
+    },
+    {
+      "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.test",
+      "sha256": "a2a9044bc167a35b2361efbabec64e89d69ce82d9790d2980119aac5fd7e9c05"
+    }
+  ],
+  "parsed_data_sha256": "4efd8b17ef81e4c810c85ae978396db1fbe0c70371a3c8e597be12b7fe749883",
+  "positive_class": ">50K",
+  "split_seed": 0,
+  "n_train": 31258,
+  "n_validation": 7815,
+  "n_test": 9769,
+  "background_selection": "first 100 training split indices",
+  "explained_row": 42897
+}

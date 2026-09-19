@@ -1,0 +1,308 @@
+{
+  "rows": [
+    {
+      "dataset": "california",
+      "d": 8,
+      "model": "xgb",
+      "experiments": [
+        "california",
+        "table1",
+        "table6"
+      ],
+      "n_values": 256,
+      "input_sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca",
+      "max_prediction_spot_error": 0.0,
+      "spot_tolerance": 1e-12,
+      "reload_equal": true,
+      "input": {
+        "identity": {
+          "dataset": "california",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "b6c4b9907afe0e18583a6e08739e94b05063429d7a8c26d424657ff3d97d70e0",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "6463c0450bd03f0abf1f7b03211a89b716e53422d870b9166ae9b052dd6b71e3",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 8,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.0038545780116692185,
+        "npz_sha256": "6dc084a523628e75369059bab5697818434bf416b5be31fe927edc304dc30b1c",
+        "d": 8,
+        "source": "saved_model_checkpoint",
+        "sha256": "9756ee64d455dbebb0d80dcffd99defd7abbbaff7d83676100c82ae7f78ec8ca"
+      }
+    },
+    {
+      "dataset": "diabetes",
+      "d": 10,
+      "model": "xgb",
+      "experiments": [
+        "table1",
+        "table6"
+      ],
+      "n_values": 1024,
+      "input_sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc",
+      "max_prediction_spot_error": 0.0,
+      "spot_tolerance": 1e-12,
+      "reload_equal": true,
+      "input": {
+        "identity": {
+          "dataset": "diabetes",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "bc508c235704904deed0a3dcd0828a07258be809e129265266ed07536fb00218",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "ce9cd8e3b1a14d099465d848c5f22ae7fa45922bdeb9db9ac2cd7c15c860abbd",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 10,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.011717903951648623,
+        "npz_sha256": "d2dcb88c6790e938882969da6e108fa504c22ba78d18817069e46e5a2c2ff2ec",
+        "d": 10,
+        "source": "saved_model_checkpoint",
+        "sha256": "0a062258046b686fbf056ec75fc414c97d71c644c55ddc499fd0b851b8e68ddc"
+      }
+    },
+    {
+      "dataset": "compas",
+      "d": 11,
+      "model": "xgb",
+      "experiments": [
+        "table1",
+        "table6"
+      ],
+      "n_values": 2048,
+      "input_sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7",
+      "max_prediction_spot_error": 0.0,
+      "spot_tolerance": 1e-12,
+      "reload_equal": true,
+      "input": {
+        "identity": {
+          "dataset": "compas",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "5159e9d927cbbd43e7c23fc08b85edc69366339d9ce587d74344c7a62b0882b1",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "5f0169a8825a608cdc9649653c5e584917591b0742d18b2eb0c679e9277143a1",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 11,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.025235565030016005,
+        "npz_sha256": "8115d7195db354a910cf7e22c6cbe2f40cb674133823ae49f3e79e294a190093",
+        "d": 11,
+        "source": "saved_model_checkpoint",
+        "sha256": "e4f7c659cad34cb2eefe35dacc97091f41c38536c3ebe62a86bca4981eea52e7"
+      }
+    },
+    {
+      "dataset": "adult",
+      "d": 14,
+      "model": "xgb",
+      "experiments": [
+        "table1",
+        "table6"
+      ],
+      "n_values": 16384,
+      "input_sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1",
+      "max_prediction_spot_error": 0.0,
+      "spot_tolerance": 1e-12,
+      "reload_equal": true,
+      "input": {
+        "identity": {
+          "dataset": "adult",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "f9f54c71e2106c233fe14d66c882752fd04853bbe9a5c36850f86295c410fd19",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "13c3e66103b46fe8ebb4a3137c40967c716af553aa2bfdde5a38e49f6d9d42e9",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 14,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.19425588700687513,
+        "npz_sha256": "84677f604248a4a3d0411814fb4e0a91f9077473feab7bbb9836feec359bd6da",
+        "d": 14,
+        "source": "saved_model_checkpoint",
+        "sha256": "e13cf2bddafdd649437b22a42748e7503ffa1d2d05f00b250acb28ae805974c1"
+      }
+    },
+    {
+      "dataset": "bank",
+      "d": 16,
+      "model": "xgb",
+      "experiments": [
+        "table1",
+        "table6"
+      ],
+      "n_values": 65536,
+      "input_sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331",
+      "max_prediction_spot_error": 0.0,
+      "spot_tolerance": 1e-12,
+      "reload_equal": true,
+      "input": {
+        "identity": {
+          "dataset": "bank",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "61c94b1aa3893fbb21f83ec465fda046f26cd66be633bebddba0f8c7784591be",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "cbeebae4075bded0b17fa7e2af7461a953f21916530b41260777b776d1f686cf",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 16,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.7346265650121495,
+        "npz_sha256": "9506827a60197840299864327bc9ff368ff5f8fbaf010a8a2e64230658ce0b42",
+        "d": 16,
+        "source": "saved_model_checkpoint",
+        "sha256": "0e1a7e156803598c1b1695056c1f18b85db11e087bd6d4fb93ae026a820da331"
+      }
+    },
+    {
+      "dataset": "german",
+      "d": 20,
+      "model": "xgb",
+      "experiments": [
+        "table1",
+        "table6"
+      ],
+      "n_values": 1048576,
+      "input_sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9",
+      "max_prediction_spot_error": 0.0,
+      "spot_tolerance": 1e-12,
+      "reload_equal": true,
+      "input": {
+        "identity": {
+          "dataset": "german",
+          "model": "xgb",
+          "checkpoint_manifest_sha256": "957f5792796474d6e00977f00a2ea48fafa486d058f84e9400a65ea8c6ab4da6",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "29ead6a387529dd34caa50822224ee97fc264255483da0aeb57b3a2a3985a562",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 20,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 20.88680459500756,
+        "npz_sha256": "ac61ada7ff4188d3acf7ab0f878b21ab28850692b3c32df9b28e64078773f1e1",
+        "d": 20,
+        "source": "saved_model_checkpoint",
+        "sha256": "fe24262336ba150687c352dc42f0c1bf9a68ba032238ea13b51cc49fca4d6aa9"
+      }
+    },
+    {
+      "dataset": "german",
+      "d": 20,
+      "model": "lgbm",
+      "experiments": [
+        "table2"
+      ],
+      "n_values": 1048576,
+      "input_sha256": "78f868ce2eefdcb0bdec62ecdac10be38dd2bf9443cb4f858cfd5174c1b17965",
+      "max_prediction_spot_error": 0.0,
+      "spot_tolerance": 1e-12,
+      "reload_equal": true,
+      "input": {
+        "identity": {
+          "dataset": "german",
+          "model": "lgbm",
+          "checkpoint_manifest_sha256": "6afa345502e326653da6c51f3031f02093da65af90373fcb87ae385a6228b51f",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "29ead6a387529dd34caa50822224ee97fc264255483da0aeb57b3a2a3985a562",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 20,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 24.356179420952685,
+        "npz_sha256": "948ff25fe579aa17e6cb16e9909e2a9b59f7b452db4082a91047b74d66ef6478",
+        "d": 20,
+        "source": "saved_model_checkpoint",
+        "sha256": "78f868ce2eefdcb0bdec62ecdac10be38dd2bf9443cb4f858cfd5174c1b17965"
+      }
+    },
+    {
+      "dataset": "adult",
+      "d": 14,
+      "model": "dt",
+      "experiments": [
+        "table3"
+      ],
+      "n_values": 16384,
+      "input_sha256": "2b288b015663bb93444155322580501533f88e4d8bea6b632b4e3bc00262dd03",
+      "max_prediction_spot_error": 0.0,
+      "spot_tolerance": 1e-12,
+      "reload_equal": true,
+      "input": {
+        "identity": {
+          "dataset": "adult",
+          "model": "dt",
+          "checkpoint_manifest_sha256": "f85f2b009925d8008e15c12362d4d4c14fe257f61b3a69fe42c77794850123f0",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "13c3e66103b46fe8ebb4a3137c40967c716af553aa2bfdde5a38e49f6d9d42e9",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 14,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.07206071098335087,
+        "npz_sha256": "a89301cd61f8591b4a75223b250c916884e82ddfd951b9364383cad1493635d7",
+        "d": 14,
+        "source": "saved_model_checkpoint",
+        "sha256": "2b288b015663bb93444155322580501533f88e4d8bea6b632b4e3bc00262dd03"
+      }
+    },
+    {
+      "dataset": "adult",
+      "d": 14,
+      "model": "mlp",
+      "experiments": [
+        "table4",
+        "table5"
+      ],
+      "n_values": 16384,
+      "input_sha256": "f299a346387a95d9aa54000265c53ea8f8d86435779578aa1e6a4d00a9bfa7eb",
+      "max_prediction_spot_error": 1.4959369853961846e-10,
+      "spot_tolerance": 1e-06,
+      "reload_equal": true,
+      "input": {
+        "identity": {
+          "dataset": "adult",
+          "model": "mlp",
+          "checkpoint_manifest_sha256": "e9884f82804f5a943c8a9e5088ac672116dac1acf7d59312198d3877d7d9bb6e",
+          "generator_source_sha256": "edc286d56f87e054ac5e9f97d70dc029bb920ea192293a2b0364e7a1bc15f8b1",
+          "prepared_sha256": "13c3e66103b46fe8ebb4a3137c40967c716af553aa2bfdde5a38e49f6d9d42e9",
+          "definition": "centered interventional; positive probability for classification",
+          "d": 14,
+          "background_rows": 100,
+          "chunk_coalitions": 256
+        },
+        "generation_seconds": 0.12891885999124497,
+        "npz_sha256": "ffe8c3d9904a918ad6e5f030a505b7a2a9a5a96b1337f9ef2bedbbf6ab6c1a93",
+        "d": 14,
+        "source": "saved_model_checkpoint",
+        "sha256": "f299a346387a95d9aa54000265c53ea8f8d86435779578aa1e6a4d00a9bfa7eb"
+      }
+    }
+  ],
+  "games": 9,
+  "families": {
+    "xgb": 6,
+    "lgbm": 1,
+    "dt": 1,
+    "mlp": 1
+  },
+  "models_by_experiment": {
+    "table1": "xgb",
+    "table2": "lgbm",
+    "table3": "dt",
+    "table4": "mlp",
+    "table5": "mlp",
+    "table6": "xgb",
+    "california": "xgb"
+  },
+  "all_verified": true
+}

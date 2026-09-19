@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "dataset": "california",
+  "model": "dt",
+  "task": "regression",
+  "threads": 4,
+  "seed": 0,
+  "versions": {
+    "numpy": "2.4.3",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.5",
+    "torch": "2.10.0+cpu",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "dataset_files": {
+    "prepared.npz": "6463c0450bd03f0abf1f7b03211a89b716e53422d870b9166ae9b052dd6b71e3",
+    "preprocessor.json": "560abd519940f257de5f27bd00bcbfe2ba3f7f9572b0a022e277d833ff7c5742",
+    "dataset.json": "ac6e8b7e9c965c4c39540326b3c557ea62770b6eb934c5295ef1dba7ea84fac1"
+  },
+  "files": {
+    "model.joblib": "22ffbd439b00185ba2abec853e99063eb3e5617f3abdee804f5dd9df44d1eb80",
+    "test_predictions.npy": "d03c35e1b59ae577c7e28e173f714f3e40c2d460d92a10194527c51e0ab79083"
+  }
+}
